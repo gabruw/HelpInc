@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\snyp_\\source\\repos\\HelpInc\\HelpInc\\HelpInc.csproj": {}
+    "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\HelpInc\\HelpInc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\snyp_\\source\\repos\\HelpInc\\HelpInc\\HelpInc.csproj": {
+    "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\HelpInc\\HelpInc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\snyp_\\source\\repos\\HelpInc\\HelpInc\\HelpInc.csproj",
+        "projectUniqueName": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\HelpInc\\HelpInc.csproj",
         "projectName": "HelpInc",
-        "projectPath": "C:\\Users\\snyp_\\source\\repos\\HelpInc\\HelpInc\\HelpInc.csproj",
+        "projectPath": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\HelpInc\\HelpInc.csproj",
         "packagesPath": "C:\\Users\\snyp_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\snyp_\\source\\repos\\HelpInc\\HelpInc\\obj\\",
+        "outputPath": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\HelpInc\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
