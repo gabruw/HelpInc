@@ -44,9 +44,6 @@ C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\HelpInc.
 C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\HelpInc.TagHelpers.input.cache
 C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\HelpInc.TagHelpers.output.cache
 C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\HelpInc.RazorCoreGenerate.cache
-C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
-C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
-C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
 C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
 C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
 C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
@@ -58,3 +55,4 @@ C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\HelpInc.
 C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\HelpInc.dll
 C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\HelpInc.pdb
 C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\HelpInc.csproj.CopyComplete
+C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\Razor\Views\Home\index.g.cshtml.cs
