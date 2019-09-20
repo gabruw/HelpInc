@@ -14,12 +14,16 @@ namespace Repository.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Ignore<Endereco>();
+            modelBuilder.Ignore<Login>();
 
             modelBuilder.ApplyConfiguration(new EnderecoConfiguration());
+            modelBuilder.ApplyConfiguration(new LoginConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }
 
         public DbSet<Endereco> Endereco { get; set; }
+
+        public DbSet<Login> Login { get; set; }
     }
 }
