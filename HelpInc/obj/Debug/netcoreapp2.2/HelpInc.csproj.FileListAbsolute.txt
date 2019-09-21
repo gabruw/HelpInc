@@ -56,3 +56,7 @@ C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\HelpInc.
 C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\HelpInc.pdb
 C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\HelpInc.csproj.CopyComplete
 C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\Razor\Views\Home\index.g.cshtml.cs
+C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\bin\Debug\netcoreapp2.2\Domain.dll
+C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\bin\Debug\netcoreapp2.2\Repository.dll
+C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\bin\Debug\netcoreapp2.2\Repository.pdb
+C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\bin\Debug\netcoreapp2.2\Domain.pdb
