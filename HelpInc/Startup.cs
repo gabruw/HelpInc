@@ -7,8 +7,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Repository.Context;
 
 namespace HelpInc
 {
@@ -21,21 +23,26 @@ namespace HelpInc
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.Configure<CookiePolicyOptions>(options =>
             {
-                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            // DB Connection
+            var connectionString = Configuration.GetConnectionString("db_HelpInc");
+            services.AddDbContext<HelpIncContext>(option => option.UseLazyLoadingProxies().UseMySql(connectionString, migration => migration.MigrationsAssembly("Repository")));
+
+            // Scope's
+            services.AddScoped<Domain.Repository.IEmpresaRepository, Repository.Repository.EmpresaRepository>();
+            services.AddScoped<Domain.Repository.IEnderecoRepository, Repository.Repository.EnderecoRepository>();
+            services.AddScoped<Domain.Repository.ILoginRepository, Repository.Repository.LoginRepository>();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
@@ -45,7 +52,6 @@ namespace HelpInc
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 

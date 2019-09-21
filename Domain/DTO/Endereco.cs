@@ -14,20 +14,36 @@ namespace Domain.DTO
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long Id { get; set; }
 
+        [MinLength(8)]
+        [MaxLength(8)]
         public int Cep { get; set; }
 
+        [MinLength(1)]
+        [MaxLength(80)]
         public string Rua { get; set; }
 
+        [MinLength(1)]
+        [MaxLength(60)]
         public string Bairro { get; set; }
 
+        [MinLength(1)]
+        [MaxLength(5)]
         public int Numero { get; set; }
 
-        public int Complemento { get; set; }
+        [MinLength(1)]
+        [MaxLength(5)]
+        public int? Complemento { get; set; }
 
+        [MinLength(1)]
+        [MaxLength(80)]
         public string Cidade { get; set; }
 
+        [MinLength(1)]
+        [MaxLength(80)]
         public string Estado { get; set; }
 
+        [MinLength(1)]
+        [MaxLength(100)]
         public string Referencia { get; set; }
 
         public override void Validate()

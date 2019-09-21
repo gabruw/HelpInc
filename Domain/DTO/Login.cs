@@ -14,10 +14,16 @@ namespace Domain.DTO
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long Id { get; set; }
 
+        [MinLength(7)]
+        [MaxLength(60)]
         public string Email { get; set; }
 
+        [MinLength(6)]
+        [MaxLength(40)]
         public string Senha { get; set; }
 
+        [MinLength(1)]
+        [MaxLength(1)]
         public string Tipo { get; set; }
 
         public override void Validate()
