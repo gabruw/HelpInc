@@ -13,13 +13,21 @@ namespace Repository.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Ignore<Empresa>();
             modelBuilder.Ignore<Endereco>();
+            modelBuilder.Ignore<Login>();
 
+            modelBuilder.ApplyConfiguration(new EmpresaConfiguration());
             modelBuilder.ApplyConfiguration(new EnderecoConfiguration());
+            modelBuilder.ApplyConfiguration(new LoginConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }
 
+        public DbSet<Empresa> Empresa { get; set; }
+
         public DbSet<Endereco> Endereco { get; set; }
+
+        public DbSet<Login> Login { get; set; }
     }
 }
