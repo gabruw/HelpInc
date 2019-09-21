@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\HelpInc\\HelpInc.csproj": {}
+    "C:\\Users\\Jovany\\source\\repos\\HelpInc\\HelpInc\\HelpInc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Domain\\Domain.csproj": {
+    "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\snyp_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Jovany\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\snyp_\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Jovany\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -58,23 +56,21 @@
         }
       }
     },
-    "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\HelpInc\\HelpInc.csproj": {
+    "C:\\Users\\Jovany\\source\\repos\\HelpInc\\HelpInc\\HelpInc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\HelpInc\\HelpInc.csproj",
+        "projectUniqueName": "C:\\Users\\Jovany\\source\\repos\\HelpInc\\HelpInc\\HelpInc.csproj",
         "projectName": "HelpInc",
-        "projectPath": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\HelpInc\\HelpInc.csproj",
-        "packagesPath": "C:\\Users\\snyp_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\HelpInc\\obj\\",
+        "projectPath": "C:\\Users\\Jovany\\source\\repos\\HelpInc\\HelpInc\\HelpInc.csproj",
+        "packagesPath": "C:\\Users\\Jovany\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jovany\\source\\repos\\HelpInc\\HelpInc\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\snyp_\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Jovany\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
@@ -86,8 +82,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Repository\\Repository.csproj"
+              "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Repository\\Repository.csproj"
               }
             }
           }
@@ -100,25 +96,6 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "dependencies": {
-            "Microsoft.AspNetCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
-            },
-            "Microsoft.AspNetCore.Razor.Design": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
-            }
-          },
           "imports": [
             "net461"
           ],
@@ -127,23 +104,21 @@
         }
       }
     },
-    "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Repository\\Repository.csproj": {
+    "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\snyp_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Repository\\obj\\",
+        "projectPath": "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\Jovany\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\snyp_\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Jovany\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -155,8 +130,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Domain\\Domain.csproj"
+              "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Domain\\Domain.csproj"
               }
             }
           }
