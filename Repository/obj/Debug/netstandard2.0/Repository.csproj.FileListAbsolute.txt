@@ -10,3 +10,9 @@ C:\Users\snyp_\Documents\GitHub\HelpInc\Repository\obj\Debug\netstandard2.0\Repo
 C:\Users\snyp_\Documents\GitHub\HelpInc\Repository\bin\Debug\netstandard2.0\Domain.dll
 C:\Users\snyp_\Documents\GitHub\HelpInc\Repository\bin\Debug\netstandard2.0\Domain.pdb
 C:\Users\snyp_\Documents\GitHub\HelpInc\Repository\obj\Debug\netstandard2.0\Repository.csproj.CopyComplete
+E:\HelpInc\Repository\obj\Debug\netstandard2.0\Repository.csprojAssemblyReference.cache
+E:\HelpInc\Repository\obj\Debug\netstandard2.0\Repository.csproj.CoreCompileInputs.cache
+E:\HelpInc\Repository\obj\Debug\netstandard2.0\Repository.AssemblyInfoInputs.cache
+E:\HelpInc\Repository\obj\Debug\netstandard2.0\Repository.AssemblyInfo.cs
+E:\HelpInc\Repository\obj\Debug\netstandard2.0\Repository.dll
+E:\HelpInc\Repository\obj\Debug\netstandard2.0\Repository.pdb

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Auxiliary\\Auxiliary.csproj": {}
+    "E:\\HelpInc\\Auxiliary\\Auxiliary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Auxiliary\\Auxiliary.csproj": {
+    "E:\\HelpInc\\Auxiliary\\Auxiliary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Auxiliary\\Auxiliary.csproj",
+        "projectUniqueName": "E:\\HelpInc\\Auxiliary\\Auxiliary.csproj",
         "projectName": "Auxiliary",
-        "projectPath": "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Auxiliary\\Auxiliary.csproj",
+        "projectPath": "E:\\HelpInc\\Auxiliary\\Auxiliary.csproj",
         "packagesPath": "C:\\Users\\Jovany\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Auxiliary\\obj\\",
+        "outputPath": "E:\\HelpInc\\Auxiliary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

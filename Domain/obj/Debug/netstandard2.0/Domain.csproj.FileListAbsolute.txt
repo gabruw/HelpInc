@@ -10,3 +10,9 @@ C:\Users\snyp_\Documents\GitHub\HelpInc\Domain\obj\Debug\netstandard2.0\Domain.p
 C:\Users\snyp_\Documents\GitHub\HelpInc\Domain\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.dll
 C:\Users\snyp_\Documents\GitHub\HelpInc\Domain\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
 C:\Users\snyp_\Documents\GitHub\HelpInc\Domain\obj\Debug\netstandard2.0\Domain.csproj.CopyComplete
+E:\HelpInc\Domain\obj\Debug\netstandard2.0\Domain.csprojAssemblyReference.cache
+E:\HelpInc\Domain\obj\Debug\netstandard2.0\Domain.csproj.CoreCompileInputs.cache
+E:\HelpInc\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfoInputs.cache
+E:\HelpInc\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfo.cs
+E:\HelpInc\Domain\obj\Debug\netstandard2.0\Domain.dll
+E:\HelpInc\Domain\obj\Debug\netstandard2.0\Domain.pdb

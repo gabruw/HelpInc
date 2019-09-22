@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jovany\\source\\repos\\HelpInc\\HelpInc\\HelpInc.csproj": {}
+    "E:\\HelpInc\\HelpInc\\HelpInc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Domain\\Domain.csproj": {
+    "E:\\HelpInc\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Domain\\Domain.csproj",
+        "projectUniqueName": "E:\\HelpInc\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Domain\\Domain.csproj",
+        "projectPath": "E:\\HelpInc\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Jovany\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Domain\\obj\\",
+        "outputPath": "E:\\HelpInc\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -56,14 +56,14 @@
         }
       }
     },
-    "C:\\Users\\Jovany\\source\\repos\\HelpInc\\HelpInc\\HelpInc.csproj": {
+    "E:\\HelpInc\\HelpInc\\HelpInc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jovany\\source\\repos\\HelpInc\\HelpInc\\HelpInc.csproj",
+        "projectUniqueName": "E:\\HelpInc\\HelpInc\\HelpInc.csproj",
         "projectName": "HelpInc",
-        "projectPath": "C:\\Users\\Jovany\\source\\repos\\HelpInc\\HelpInc\\HelpInc.csproj",
+        "projectPath": "E:\\HelpInc\\HelpInc\\HelpInc.csproj",
         "packagesPath": "C:\\Users\\Jovany\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jovany\\source\\repos\\HelpInc\\HelpInc\\obj\\",
+        "outputPath": "E:\\HelpInc\\HelpInc\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -82,8 +82,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Repository\\Repository.csproj"
+              "E:\\HelpInc\\Repository\\Repository.csproj": {
+                "projectPath": "E:\\HelpInc\\Repository\\Repository.csproj"
               }
             }
           }
@@ -104,14 +104,14 @@
         }
       }
     },
-    "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Repository\\Repository.csproj": {
+    "E:\\HelpInc\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Repository\\Repository.csproj",
+        "projectUniqueName": "E:\\HelpInc\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Repository\\Repository.csproj",
+        "projectPath": "E:\\HelpInc\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\Jovany\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Repository\\obj\\",
+        "outputPath": "E:\\HelpInc\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -130,8 +130,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Jovany\\source\\repos\\HelpInc\\Domain\\Domain.csproj"
+              "E:\\HelpInc\\Domain\\Domain.csproj": {
+                "projectPath": "E:\\HelpInc\\Domain\\Domain.csproj"
               }
             }
           }
