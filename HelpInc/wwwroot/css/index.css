@@ -1,0 +1,12 @@
+﻿.row {
+    height: 200px;
+}
+
+.row menu-superior {
+    height: 50px !important;
+    background-color: #343440;
+}
+
+.row linha-cinza {
+    background-color: #F2F2F2;
+}
