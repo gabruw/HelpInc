@@ -4108,11 +4108,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\HelpInc\\Repository\\Repository.csproj",
+      "projectUniqueName": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Repository\\Repository.csproj",
       "projectName": "Repository",
-      "projectPath": "E:\\HelpInc\\Repository\\Repository.csproj",
-      "packagesPath": "C:\\Users\\Jovany\\.nuget\\packages\\",
-      "outputPath": "E:\\HelpInc\\Repository\\obj\\",
+      "projectPath": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Repository\\Repository.csproj",
+      "packagesPath": "C:\\Users\\snyp_\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -4133,8 +4133,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "E:\\HelpInc\\Domain\\Domain.csproj": {
-              "projectPath": "E:\\HelpInc\\Domain\\Domain.csproj"
+            "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Domain\\Domain.csproj"
             }
           }
         }

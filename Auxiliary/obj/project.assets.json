@@ -186,11 +186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\HelpInc\\Auxiliary\\Auxiliary.csproj",
+      "projectUniqueName": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Auxiliary\\Auxiliary.csproj",
       "projectName": "Auxiliary",
-      "projectPath": "E:\\HelpInc\\Auxiliary\\Auxiliary.csproj",
-      "packagesPath": "C:\\Users\\Jovany\\.nuget\\packages\\",
-      "outputPath": "E:\\HelpInc\\Auxiliary\\obj\\",
+      "projectPath": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Auxiliary\\Auxiliary.csproj",
+      "packagesPath": "C:\\Users\\snyp_\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Auxiliary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
