@@ -13399,11 +13399,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\HelpInc\\HelpInc\\HelpInc.csproj",
+      "projectUniqueName": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\HelpInc\\HelpInc.csproj",
       "projectName": "HelpInc",
-      "projectPath": "E:\\HelpInc\\HelpInc\\HelpInc.csproj",
-      "packagesPath": "C:\\Users\\Jovany\\.nuget\\packages\\",
-      "outputPath": "E:\\HelpInc\\HelpInc\\obj\\",
+      "projectPath": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\HelpInc\\HelpInc.csproj",
+      "packagesPath": "C:\\Users\\snyp_\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\HelpInc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -13424,8 +13424,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "E:\\HelpInc\\Repository\\Repository.csproj": {
-              "projectPath": "E:\\HelpInc\\Repository\\Repository.csproj"
+            "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Repository\\Repository.csproj"
             }
           }
         }
