@@ -186,11 +186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\HelpInc\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "E:\\HelpInc\\Domain\\Domain.csproj",
-      "packagesPath": "C:\\Users\\Jovany\\.nuget\\packages\\",
-      "outputPath": "E:\\HelpInc\\Domain\\obj\\",
+      "projectPath": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\snyp_\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
