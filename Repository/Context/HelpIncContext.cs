@@ -16,10 +16,12 @@ namespace Repository.Context
             modelBuilder.Ignore<Empresa>();
             modelBuilder.Ignore<Endereco>();
             modelBuilder.Ignore<Login>();
+            modelBuilder.Ignore<Prestador>();
 
             modelBuilder.ApplyConfiguration(new EmpresaConfiguration());
             modelBuilder.ApplyConfiguration(new EnderecoConfiguration());
             modelBuilder.ApplyConfiguration(new LoginConfiguration());
+            modelBuilder.ApplyConfiguration(new PrestadorConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }
@@ -29,5 +31,5 @@ namespace Repository.Context
         public DbSet<Endereco> Endereco { get; set; }
 
         public DbSet<Login> Login { get; set; }
+        public DbSet<Prestador> Prestador { get; set; }
     }
-}

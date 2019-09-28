@@ -40,9 +40,14 @@ namespace Domain.DTO
                 AddError("O campo Senha do Login não foi informado.");
             }
 
+            if (Senha.Length > 1 && Senha.Length < 6)
+            {
+                AddError("O campo Senha do Login não possuí o número de caracteres esperados.");
+            }
+
             if (Tipo.Length != 1)
             {
-                AddError("O campo Tipo do Login não foi informado ou está preeenchido erroneamente.");
+                AddError("O campo Tipo do Login não foi informado.");
             }
         }
     }

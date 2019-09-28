@@ -50,9 +50,14 @@ namespace Domain.DTO
         {
             ClearValidateMensages();
 
-            if (Cep.ToString().Length < 8)
+            if (Cep.ToString().Length < 1)
             {
                 AddError("O campo CEP do Endereço não foi informado.");
+            }
+
+            if (Cep.ToString().Length > 0 && Cep.ToString().Length < 8)
+            {
+                AddError("O campo CEP do Endereço não possuí o número de caracteres esperados.");
             }
 
             if (Rua.Length < 1)
