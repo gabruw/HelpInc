@@ -56,12 +56,22 @@ namespace Domain.DTO
 
             if (Telefone.ToString().Length < 1)
             {
-                AddError("O campo Telefone da Empresa não foi informado.");
+                AddError("O campo Telefone do Empresa não foi informado.");
+            }
+
+            if (Telefone.ToString().Length > 0 && Telefone.ToString().Length < 10)
+            {
+                AddError("O campo Telefone do Empresa não possuí o número de caracteres esperados.");
             }
 
             if (Cnpj.ToString().Length < 1)
             {
-                AddError("O campo Cnpj da Empresa não foi informado.");
+                AddError("O campo CNPJ da Empresa não foi informado.");
+            }
+
+            if (Cnpj.ToString().Length > 0 && Cnpj.ToString().Length < 14)
+            {
+                AddError("O campo CNPJ da Empresa não possuí o número de caracteres esperados.");
             }
         }
     }
