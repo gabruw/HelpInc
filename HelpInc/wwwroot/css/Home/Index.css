@@ -2,11 +2,6 @@
     height: 200px;
 }
 
-.menu-superior {
-    height: 50px !important;
-    background-color: #343440 !important;
-}
-
-.linha-cinza {
+.row-grey {
     background-color: #F2F2F2 !important;
 }

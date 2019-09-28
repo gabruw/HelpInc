@@ -29,5 +29,10 @@ namespace Repository.Context
         public DbSet<Endereco> Endereco { get; set; }
 
         public DbSet<Login> Login { get; set; }
+<<<<<<< Updated upstream
+=======
+
+        public DbSet<Prestador> Prestador { get; set; }
+>>>>>>> Stashed changes
     }
 }

@@ -7,10 +7,12 @@
 
     @* Framework's CSS *@
     <link rel="stylesheet" type="text/css" href="~/lib/semantic/semantic.css">
-    
+    <link rel="stylesheet" type="text/css" href="~/lib/font-awesome-free/css/all.css">
+
     @* Link's CSS *@
     <link rel="stylesheet" type="text/css" href="~/css/Generic/Superior-menu.css">
     <link rel="stylesheet" type="text/css" href="~/css/System/Side-menu.css">
+    <link rel="stylesheet" type="text/css" href="~/css/System/Page.css">
 
     @* Link's JS *@
     <script defer type="text/javascript" src="~/js/Generic/Superior-menu.js"></script>
@@ -101,10 +103,14 @@
         </button>
 
         <div class="container">
-            <partial name="_CookieConsentPartial" />
-            <main role="main" class="pb-3">
-                @RenderBody()
-            </main>
+            <div class="ui two column centered grid">
+                <div id="Main-content" class="column">
+                    <partial name="_CookieConsentPartial" />
+                    <main role="main" class="pb-3">
+                        @RenderBody()
+                    </main>
+                </div>
+            </div>
         </div>
     </div>
 
