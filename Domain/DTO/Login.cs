@@ -24,7 +24,7 @@ namespace Domain.DTO
 
         [MinLength(1)]
         [MaxLength(1)]
-        public string Tipo { get; set; }
+        public char Tipo { get; set; }
 
         public override void Validate()
         {
@@ -40,9 +40,14 @@ namespace Domain.DTO
                 AddError("O campo Senha do Login não foi informado.");
             }
 
-            if (Tipo.Length != 1)
+            if (Senha.Length > 1 && Senha.Length < 6)
             {
-                AddError("O campo Tipo do Login não foi informado ou está preeenchido erroneamente.");
+                AddError("O campo Senha do Login não possuí o número de caracteres esperados.");
+            }
+
+            if (Tipo.ToString().Length != 1)
+            {
+                AddError("O campo Tipo do Login não foi informado.");
             }
         }
     }
