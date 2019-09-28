@@ -2,7 +2,7 @@
 
 namespace Domain.Repository
 {
-    public interface IEmpresaRepository : IBaseRepository<Empresa>
+    public interface IHabilidadeRepository : IBaseRepository<Habilidade>
     {
 
     }
