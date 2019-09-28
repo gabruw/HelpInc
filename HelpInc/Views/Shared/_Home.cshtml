@@ -5,13 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - HelpInc</title>
 
-    <link rel="stylesheet" type="text/css" href="~/css/Home/Index.css">
+    @* Framework's CSS *@
     <link rel="stylesheet" type="text/css" href="~/lib/semantic/semantic.css">
 
+    @* Link's CSS *@
+    <link rel="stylesheet" type="text/css" href="~/css/Home/Index.css">
+    <link rel="stylesheet" type="text/css" href="~/css/Generic/Superior-menu.css">
+
+    @* Font's *@
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+    @* Link's JS *@
+    <script defer type="text/javascript" src="~/js/Generic/Superior-menu.js"></script>
+
+    @* Framework's JS *@
     <script type="text/javascript" src="~/lib/jquery/dist/jquery.js"></script>
     <script type="text/javascript" src="~/lib/semantic/semantic.js"></script>
 </head>
 <body>
+    @* Menu Superior *@
+    <div class="ui large top fixed menu">
+        <div class="item">
+            <img class="ui mini image" src="https://semantic-ui.com/images/wireframe/image.png">
+        </div>
+
+        <a class="item menu-item" asp-controller="Home" asp-action="Index">Home</a>
+
+        <div class="right menu">
+            <div class="item">
+                <div class="ui inverted blue button">Registrar</div>
+            </div>
+
+            <div class="item">
+                <div class="ui dropdown inverted red button">
+                    <span class="text">Login</span>
+
+                    <div class="menu">
+                        <div class="header">
+                            <i class="tags icon"></i>
+                            Seção 1
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="item">
+                            <i class="attention icon"></i>
+                            Opção 1
+                        </div>
+
+                        <div class="item">
+                            <i class="comment icon"></i>
+                            Opção 2
+                        </div>
+
+                        <div class="item">
+                            <i class="conversation icon"></i>
+                            Opção 3
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="item">
+                            <i class="camera icon"></i>
+                            Sair
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <partial name="_CookieConsentPartial" />
         <main role="main" class="pb-3">

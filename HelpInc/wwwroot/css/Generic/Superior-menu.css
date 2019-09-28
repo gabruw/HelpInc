@@ -1,0 +1,41 @@
+﻿body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.ui.menu {
+    background-color: #1B1C1D !important;
+}
+
+.item {
+    color: #FFFFFF !important;
+}
+
+.menu-item:hover {
+    background-color: #343440 !important;
+}
+
+.button {
+    border-radius: unset !important;
+}
+
+.item > .ui.button {
+    padding: 0.78571429em 3.2em 0.78571429em;
+}
+
+.ui.inverted.blue.buttons .button, .ui.inverted.blue.button {
+    color: #2FB5D4;
+    box-shadow: 0px 0px 0px 2px #2FB5D4 inset !important;
+}
+
+    .ui.inverted.blue.buttons .button:hover, .ui.inverted.blue.button:hover {
+        background-color: #2FB5D4;
+    }
+
+.ui.inverted.red.buttons .button, .ui.inverted.red.button {
+    color: #C65652;
+    box-shadow: 0px 0px 0px 2px #C65652 inset !important;
+}
+
+    .ui.inverted.red.buttons .button:hover, .ui.inverted.red.button:hover {
+        background-color: #C65652;
+    }
