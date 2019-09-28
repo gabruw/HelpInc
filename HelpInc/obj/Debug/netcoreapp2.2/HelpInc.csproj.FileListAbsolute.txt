@@ -60,3 +60,4 @@ C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\bin\Debug\netcoreapp2.2\Reposito
 C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\bin\Debug\netcoreapp2.2\Repository.pdb
 C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\bin\Debug\netcoreapp2.2\Domain.pdb
 C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Home.g.cshtml.cs
+C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_System.g.cshtml.cs

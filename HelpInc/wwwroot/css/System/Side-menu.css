@@ -1,0 +1,35 @@
+﻿#active-side-menu {
+    background-color: #1B1C1D !important;
+    border-radius: 0px 5px 5px 0px !important;
+}
+
+    #active-side-menu > i {
+        color: #FFFFFF;
+    }
+
+#User-img {
+    margin-top: 20px;
+}
+
+#Information {
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+    #Information > span {
+        font-size: 18px;
+    }
+
+        #Information > span:first-child {
+            font-size: 22px;
+        }
+
+#Content > .item {
+    font-size: 15px;
+}
+
+.item > i {
+    margin-right: 10px;
+}
