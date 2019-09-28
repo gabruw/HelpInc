@@ -7,23 +7,99 @@
 
     @* Framework's CSS *@
     <link rel="stylesheet" type="text/css" href="~/lib/semantic/semantic.css">
+    
+    @* Link's CSS *@
+    <link rel="stylesheet" type="text/css" href="~/css/Generic/Superior-menu.css">
+    <link rel="stylesheet" type="text/css" href="~/css/System/Side-menu.css">
 
     @* Link's JS *@
-    <script type="text/javascript" src="~/js/Generic/Side-menu.js"></script>
+    <script defer type="text/javascript" src="~/js/Generic/Superior-menu.js"></script>
+    <script defer type="text/javascript" src="~/js/System/Side-menu.js"></script>
 
     @* Framework's JS *@
     <script type="text/javascript" src="~/lib/jquery/dist/jquery.js"></script>
     <script type="text/javascript" src="~/lib/semantic/semantic.js"></script>
 </head>
 <body>
+    @* Menu Superior *@
+    <div class="ui large top fixed menu">
+        <div class="item">
+            <img class="ui mini image" src="https://semantic-ui.com/images/wireframe/image.png">
+        </div>
+
+        <a class="item menu-item">Home</a>
+        <a class="item menu-item">Opção 1</a>
+        <a class="item menu-item">Opção 2</a>
+
+        <div class="right menu">
+            <div class="ui right dropdown item menu-item">
+                <img class="ui mini circular middle aligned image" src="https://semantic-ui.com/images/wireframe/image.png">
+                <span>Nome usuário</span>
+
+                <div class="menu">
+                    <div class="header">
+                        <i class="tags icon"></i>
+                        Seção 1
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="item">
+                        <i class="attention icon"></i>
+                        Opção 1
+                    </div>
+
+                    <div class="item">
+                        <i class="comment icon"></i>
+                        Opção 2
+                    </div>
+
+                    <div class="item">
+                        <i class="conversation icon"></i>
+                        Opção 3
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="item">
+                        <i class="camera icon"></i>
+                        Sair
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* Menu Lateral *@
     <div class="ui sidebar inverted vertical menu">
-        <a class="item">1</a>
-        <a class="item">2</a>
-        <a class="item">3</a>
+        <img id="User-img" class="ui small centered circular image" src="https://semantic-ui.com/images/wireframe/square-image.png" />
+
+        <div id="Information">
+            <span>Nome do Usuário</span>
+            <br>
+            <span>Tipo da Conta</span>
+        </div>
+
+        <div id="Content">
+            <a class="item">
+                <i class="fas fa-ad"></i> Item 1
+            </a>
+
+            <a class="item">
+                <i class="fas fa-ad"></i> Item 2
+            </a>
+
+            <a class="item">
+                <i class="fas fa-ad"></i> Item 3
+            </a>
+        </div>
     </div>
 
     <div class="pusher">
-        <button id="menu-lateral">Ativar</button>
+        <button id="active-side-menu" class="ui icon button">
+            <i class="fas fa-bars"></i>
+        </button>
+
         <div class="container">
             <partial name="_CookieConsentPartial" />
             <main role="main" class="pb-3">
