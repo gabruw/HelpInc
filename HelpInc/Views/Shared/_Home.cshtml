@@ -24,56 +24,62 @@
 </head>
 <body>
     @* Menu Superior *@
-    <div class="ui large top fixed menu">
-        <div class="item">
-            <img class="ui mini image" src="https://semantic-ui.com/images/wireframe/image.png">
-        </div>
+    <header>
+        <nav>
+            <div class="ui large top fixed menu">
+                <div class="item">
+                    <img class="ui mini image" src="https://semantic-ui.com/images/wireframe/image.png">
+                </div>
 
-        <a class="item menu-item" asp-controller="Home" asp-action="Index">Home</a>
+                <a class="item menu-item" asp-controller="Home" asp-action="Index">Home</a>
 
-        <div class="right menu">
-            <div class="item">
-                <div class="ui inverted blue button">Registrar</div>
-            </div>
+                <a class="item menu-item" asp-controller="System" asp-action="Index">Sistema</a>
 
-            <div class="item">
-                <div class="ui dropdown inverted red button">
-                    <span class="text">Login</span>
+                <div class="right menu">
+                    <div class="item">
+                        <div class="ui inverted blue button">Registrar</div>
+                    </div>
 
-                    <div class="menu">
-                        <div class="header">
-                            <i class="tags icon"></i>
-                            Seção 1
-                        </div>
+                    <div class="item">
+                        <div class="ui dropdown inverted red button">
+                            <span class="text">Login</span>
 
-                        <div class="divider"></div>
+                            <div class="menu">
+                                <div class="header">
+                                    <i class="tags icon"></i>
+                                    Seção 1
+                                </div>
 
-                        <div class="item">
-                            <i class="attention icon"></i>
-                            Opção 1
-                        </div>
+                                <div class="divider"></div>
 
-                        <div class="item">
-                            <i class="comment icon"></i>
-                            Opção 2
-                        </div>
+                                <div class="item">
+                                    <i class="attention icon"></i>
+                                    Opção 1
+                                </div>
 
-                        <div class="item">
-                            <i class="conversation icon"></i>
-                            Opção 3
-                        </div>
+                                <div class="item">
+                                    <i class="comment icon"></i>
+                                    Opção 2
+                                </div>
 
-                        <div class="divider"></div>
+                                <div class="item">
+                                    <i class="conversation icon"></i>
+                                    Opção 3
+                                </div>
 
-                        <div class="item">
-                            <i class="camera icon"></i>
-                            Sair
+                                <div class="divider"></div>
+
+                                <div class="item">
+                                    <i class="camera icon"></i>
+                                    Sair
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </nav>
+    </header>
 
     <div class="container">
         <partial name="_CookieConsentPartial" />
