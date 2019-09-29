@@ -7,3 +7,11 @@ C:\Users\snyp_\Documents\GitHub\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxil
 C:\Users\snyp_\Documents\GitHub\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxiliary.AssemblyInfo.cs
 C:\Users\snyp_\Documents\GitHub\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxiliary.dll
 C:\Users\snyp_\Documents\GitHub\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxiliary.pdb
+E:\HelpInc\Auxiliary\bin\Debug\netstandard2.0\Auxiliary.deps.json
+E:\HelpInc\Auxiliary\bin\Debug\netstandard2.0\Auxiliary.dll
+E:\HelpInc\Auxiliary\bin\Debug\netstandard2.0\Auxiliary.pdb
+E:\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxiliary.csprojAssemblyReference.cache
+E:\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxiliary.AssemblyInfoInputs.cache
+E:\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxiliary.AssemblyInfo.cs
+E:\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxiliary.dll
+E:\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxiliary.pdb

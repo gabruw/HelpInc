@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Auxiliary\\Auxiliary.csproj": {}
+    "E:\\HelpInc\\Auxiliary\\Auxiliary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Auxiliary\\Auxiliary.csproj": {
+    "E:\\HelpInc\\Auxiliary\\Auxiliary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Auxiliary\\Auxiliary.csproj",
+        "projectUniqueName": "E:\\HelpInc\\Auxiliary\\Auxiliary.csproj",
         "projectName": "Auxiliary",
-        "projectPath": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Auxiliary\\Auxiliary.csproj",
-        "packagesPath": "C:\\Users\\snyp_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Auxiliary\\obj\\",
+        "projectPath": "E:\\HelpInc\\Auxiliary\\Auxiliary.csproj",
+        "packagesPath": "C:\\Users\\Jovany\\.nuget\\packages\\",
+        "outputPath": "E:\\HelpInc\\Auxiliary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\snyp_\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Jovany\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -51,10 +49,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
