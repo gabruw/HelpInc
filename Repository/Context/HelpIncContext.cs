@@ -38,3 +38,4 @@ namespace Repository.Context
 
         public DbSet<Prestador> Prestador { get; set; }
     }
+}
