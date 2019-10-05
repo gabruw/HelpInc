@@ -344,3 +344,4 @@ healthchecksdb
 *.dll
 *.pdb
 .vs/HelpInc/DesignTimeBuild/.dtbcache
+*.cache

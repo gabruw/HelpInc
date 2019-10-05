@@ -35,7 +35,7 @@ namespace Repository.Context
         public DbSet<Habilidade> Habilidade { get; set; }
 
         public DbSet<Login> Login { get; set; }
-
+        
         public DbSet<Prestador> Prestador { get; set; }
     }
 }

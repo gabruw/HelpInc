@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "25312784300cda953f22f7a0b5e1eaf6bc013f58"
+    "signature": ""
   },
   "compilationOptions": {},
   "targets": {
@@ -56,7 +56,7 @@
           "Microsoft.Extensions.Logging": "2.2.0",
           "Remotion.Linq": "2.2.0",
           "System.Collections.Immutable": "1.5.0",
-          "System.ComponentModel.Annotations": "4.5.0",
+          "System.ComponentModel.Annotations": "4.6.0",
           "System.Diagnostics.DiagnosticSource": "4.5.0",
           "System.Interactive.Async": "3.2.0"
         },
@@ -201,7 +201,7 @@
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
           "Microsoft.Extensions.Primitives": "2.2.0",
-          "System.ComponentModel.Annotations": "4.5.0"
+          "System.ComponentModel.Annotations": "4.6.0"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {
@@ -369,7 +369,7 @@
           }
         }
       },
-      "System.ComponentModel.Annotations/4.5.0": {
+      "System.ComponentModel.Annotations/4.6.0": {
         "runtime": {
           "lib/netstandard2.0/System.ComponentModel.Annotations.dll": {
             "assemblyVersion": "4.2.1.0",
@@ -854,6 +854,9 @@
         }
       },
       "Domain/1.0.0": {
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.6.0"
+        },
         "runtime": {
           "Domain.dll": {}
         }
@@ -1097,12 +1100,12 @@
       "path": "system.componentmodel/4.3.0",
       "hashPath": "system.componentmodel.4.3.0.nupkg.sha512"
     },
-    "System.ComponentModel.Annotations/4.5.0": {
+    "System.ComponentModel.Annotations/4.6.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-UxYQ3FGUOtzJ7LfSdnYSFd7+oEv6M8NgUatatIN2HxNtDdlcvFAf+VIq4Of9cDMJEJC0aSRv/x898RYhB4Yppg==",
-      "path": "system.componentmodel.annotations/4.5.0",
-      "hashPath": "system.componentmodel.annotations.4.5.0.nupkg.sha512"
+      "sha512": "sha512-pOd+UhZ3X8xfwKDlgAzowUJNjp8VYVmOHZm++vCd0kq1HZ0zK3mNo2yRXjYgv7Ik/Xi43fmJfND2PLEsQSALCg==",
+      "path": "system.componentmodel.annotations/4.6.0",
+      "hashPath": "system.componentmodel.annotations.4.6.0.nupkg.sha512"
     },
     "System.ComponentModel.Primitives/4.3.0": {
       "type": "package",

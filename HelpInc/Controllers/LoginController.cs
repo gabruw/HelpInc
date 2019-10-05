@@ -12,7 +12,7 @@ namespace HelpInc.Controllers
         // GET: Login
         public ActionResult Index()
         {
-            return View();
+            return View("~/Views/Login/Index.cshtml");
         }
 
         // GET: Login/Details/5
