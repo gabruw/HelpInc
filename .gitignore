@@ -373,3 +373,15 @@ Auxiliary/obj/Debug/netstandard2.0/Auxiliary.csproj.FileListAbsolute.txt
 .vs/HelpInc/v16/.suo
 .vs/HelpInc/DesignTimeBuild/.dtbcache
 Repository/obj/Debug/netstandard2.0/Repository.csprojAssemblyReference.cache
+.vs/HelpInc/v16/.suo
+.vs/HelpInc/v16/Server/sqlite3/storage.ide
+Auxiliary/bin/Debug/netstandard2.0/Auxiliary.dll
+Auxiliary/obj/Debug/netstandard2.0/Auxiliary.csprojAssemblyReference.cache
+Auxiliary/obj/Debug/netstandard2.0/Auxiliary.dll
+Domain/obj/Debug/netstandard2.0/Domain.csprojAssemblyReference.cache
+HelpInc/bin/Debug/netcoreapp2.2/HelpInc.runtimeconfig.dev.json
+HelpInc/bin/Debug/netcoreapp2.2/Repository.pdb
+HelpInc/obj/Debug/netcoreapp2.2/HelpInc.csprojAssemblyReference.cache
+Repository/bin/Debug/netstandard2.0/Repository.pdb
+Repository/obj/Debug/netstandard2.0/Repository.csprojAssemblyReference.cache
+Repository/obj/Debug/netstandard2.0/Repository.pdb
