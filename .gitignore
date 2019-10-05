@@ -338,3 +338,9 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+.vs/HelpInc/v16/.suo
+.vs/HelpInc/v16/Server/sqlite3/storage.ide
+*.ide
+*.dll
+*.pdb
+.vs/HelpInc/DesignTimeBuild/.dtbcache

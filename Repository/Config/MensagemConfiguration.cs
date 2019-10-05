@@ -8,12 +8,12 @@ namespace Repository.Config
     {
         public void Configure(EntityTypeBuilder<Mensagem> builder)
         {
-            builder.HasKey(pre => pre.Id);
-            builder.HasOne(pre => pre.MensagemDestinatario).WithMany().HasForeignKey(pre => pre.IdDestinatario);
-            builder.HasOne(pre => pre.MensagemRemetente).WithMany().HasForeignKey(pre => pre.IdRemetente);
+            builder.HasKey(men => men.Id);
+            builder.HasOne(men => men.MensagemDestinatario).WithMany().HasForeignKey(men => men.IdDestinatario);
+            builder.HasOne(men => men.MensagemRemetente).WithMany().HasForeignKey(men => men.IdRemetente);
 
-            builder.Property(pre => pre.CaminhoTxt).IsRequired().HasMaxLength(255).HasColumnType("varchar(255)");
-            builder.Property(pre => pre.Data).HasMaxLength(8).HasColumnType("Date");
+            builder.Property(men => men.CaminhoTxt).IsRequired().HasMaxLength(255).HasColumnType("varchar(255)");
+            builder.Property(men => men.Data).HasMaxLength(8).HasColumnType("Date");
 
         } 
     }
