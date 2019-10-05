@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Domain.DTO;
+using Domain.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,16 +11,32 @@ namespace HelpInc.Controllers
 {
     public class LoginController : Controller
     {
+        private readonly ILoginRepository _loginRepository;
+
+        public LoginController(ILoginRepository loginRepository)
+        {
+            _loginRepository = loginRepository;
+        }
+
         // GET: Login
         public ActionResult Index()
         {
             return View("~/Views/Login/Index.cshtml");
         }
 
-        // GET: Login/Details/5
-        public ActionResult Details(int id)
+        // POST: Login/Logar
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Logar(Login dataLogin)
         {
-            return View();
+            Login entitylogin = _loginRepository.Logar(dataLogin);
+
+            //if ()
+            //{
+
+            //}
+
+            return View("~/Views/System/Index.cshtml", entitylogin);
         }
 
         // GET: Login/Create
@@ -58,29 +76,6 @@ namespace HelpInc.Controllers
             try
             {
                 // TODO: Add update logic here
-
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: Login/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: Login/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
 
                 return RedirectToAction(nameof(Index));
             }

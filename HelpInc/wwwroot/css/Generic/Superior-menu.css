@@ -6,6 +6,12 @@
     background-color: #1B1C1D !important;
 }
 
+.ui.popup {
+    /*overflow: auto;*/
+    width: auto !important;
+    right: 65px !important;
+}
+
 .item {
     color: #FFFFFF !important;
 }

@@ -1,3 +1,1 @@
-﻿$('.dropdown').dropdown({
-    on: 'hover'
-});
+﻿
