@@ -1,7 +1,20 @@
-﻿.row {
+﻿#Main-content > .row {
     height: 200px;
 }
 
-.row-grey {
+Main-content > .row-grey {
     background-color: #F2F2F2 !important;
+}
+
+#Input-email, #Input-password {
+    width: 230px !important;
+}
+
+#Button-entrace {
+    width: 270px !important;
+    background-color: #313540 !important;
+}
+
+#Row-password, #Row-entrace {
+    margin-top: 20px;
 }

@@ -4,18 +4,20 @@
     Layout = "_Login";
 }
 
+@model Domain.DTO.Login
+
 <div class="ui middle aligned center aligned grid">
     <div class="column">
         <div id="Contents">
             <img src="../../images/Generic/Logo.png" class="ui centered image ">
 
-            <form class="ui large form">
+            <form class="ui large form" asp-action="Logar" asp-controller="Login" method="post">
                 <div class="field">
                     <div class="ui labeled input">
                         <div class="ui label">
                             <i class="fas fa-user"></i>
                         </div>
-                        <input id="Input-email"type="text" name="email" placeholder="E-mail">
+                        <input type="text" asp-for="Email" id="Input-email" name="email" placeholder="E-mail" required>
                     </div>
                 </div>
 
@@ -24,12 +26,14 @@
                         <div class="ui label">
                             <i class="fas fa-key"></i>
                         </div>
-                        <input id="Input-password" type="password" name="password" placeholder="Senha">
+                        <input type="password" asp-for="Senha" id="Input-password" name="password" placeholder="Senha" required>
                     </div>
                 </div>
+
+                <button type="submit" id="Button-entrace" class="ui fluid large teal submit button ">ENTRAR</button>
             </form>
 
-            <div id="Button-entrace" class="ui fluid large teal submit button ">ENTRAR</div>
+            
             <div class="content center">
                 <a id="Forgot-password" href="#">Esqueceu a senha ?</a>
             </div>
