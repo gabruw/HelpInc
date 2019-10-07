@@ -27,12 +27,16 @@ namespace HelpInc.Controllers
         // POST: Login/Logar
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Logar(Login dataLogin)
+        public ActionResult Logar(IFormCollection dataLogin)
         {
-            Login entitylogin = _loginRepository.Logar(dataLogin);
+            Login serializeLogin = new Login();
+            serializeLogin.Email = dataLogin["login"];
+            serializeLogin.Senha = dataLogin["password"];
 
-            //if ()
-            //{
+            Login entitylogin = _loginRepository.Logar(serializeLogin);
+
+            ////if ()
+            ////{
 
             //}
 
