@@ -385,3 +385,7 @@ HelpInc/obj/Debug/netcoreapp2.2/HelpInc.csprojAssemblyReference.cache
 Repository/bin/Debug/netstandard2.0/Repository.pdb
 Repository/obj/Debug/netstandard2.0/Repository.csprojAssemblyReference.cache
 Repository/obj/Debug/netstandard2.0/Repository.pdb
+Auxiliary/obj/Auxiliary.csproj.nuget.cache
+*.cache
+*.props
+*.cache
