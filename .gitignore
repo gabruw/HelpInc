@@ -368,3 +368,8 @@ Domain/bin/Debug/netstandard2.0/Domain.pdb
 .vs/HelpInc/v16/Server/sqlite3/storage.ide
 .vs/HelpInc/v16/.suo
 .vs/HelpInc/DesignTimeBuild/.dtbcache
+Repository/obj/Repository.csproj.nuget.cache
+*.cache
+*.cache
+Repository/obj/Repository.csproj.nuget.cache
+Repository/obj/project.assets.json
