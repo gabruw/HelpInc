@@ -389,3 +389,4 @@ Auxiliary/obj/Auxiliary.csproj.nuget.cache
 *.cache
 *.props
 *.cache
+.vs/HelpInc/v16/.suo
