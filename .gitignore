@@ -408,6 +408,9 @@ Repository/bin/Debug/netstandard2.0/Repository.pdb
 Repository/Context/HelpIncContext.cs
 Repository/obj/Debug/netstandard2.0/Repository.pdb
 Repository/obj/Debug/netstandard2.0/Repository.csprojAssemblyReference.cache
+HelpInc/bin/Debug/netcoreapp2.2/Repository.pdb
+Repository/bin/Debug/netstandard2.0/Repository.pdb
+Repository/obj/Debug/netstandard2.0/Repository.pdb
 *.ide
 *.ide
 .vs/HelpInc/DesignTimeBuild/.dtbcache

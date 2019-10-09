@@ -2,7 +2,7 @@
 
 namespace Domain.Repository
 {
-    public interface ILGrupoRepository : IBaseRepository<Grupo>
+    public interface IGrupoRepository : IBaseRepository<Grupo>
     {
 
     }
