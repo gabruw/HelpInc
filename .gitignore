@@ -390,3 +390,8 @@ HelpInc/bin/Debug/netcoreapp2.2/HelpInc.dll
 HelpInc/obj/Debug/netcoreapp2.2/HelpInc.csprojAssemblyReference.cache
 HelpInc/obj/Debug/netcoreapp2.2/HelpInc.dll
 HelpInc/obj/Debug/netcoreapp2.2/HelpInc.pdb
+Auxiliary/obj/Auxiliary.csproj.nuget.cache
+*.cache
+*.props
+*.cache
+.vs/HelpInc/v16/.suo
