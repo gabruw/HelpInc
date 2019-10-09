@@ -18,3 +18,14 @@ Main-content > .row-grey {
 #Row-password, #Row-entrace {
     margin-top: 20px;
 }
+
+.glide__slide > img {
+    width: 100%;
+    height: 420px;
+}
+
+.glide__bullet, .glide__bullets {
+    cursor: initial !important;
+}
+
+
