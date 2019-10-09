@@ -31,6 +31,16 @@ namespace HelpInc
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddDistributedMemoryCache();
+
+            services.AddSession(options =>
+            {
+                options.Cookie.Name = ".HelpInc.Session";
+                options.IdleTimeout = TimeSpan.FromDays(1);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             // DB Connection
@@ -38,9 +48,14 @@ namespace HelpInc
             services.AddDbContext<HelpIncContext>(option => option.UseLazyLoadingProxies().UseMySql(connectionString, migration => migration.MigrationsAssembly("Repository")));
 
             // Scope's
+            services.AddScoped<Domain.Repository.IConsumidorRepository, Repository.Repository.ConsumidorRepository>();
             services.AddScoped<Domain.Repository.IEmpresaRepository, Repository.Repository.EmpresaRepository>();
             services.AddScoped<Domain.Repository.IEnderecoRepository, Repository.Repository.EnderecoRepository>();
+            services.AddScoped<Domain.Repository.IGrupoRepository, Repository.Repository.GrupoRepository>();
+            services.AddScoped<Domain.Repository.IHabilidadeRepository, Repository.Repository.HabilidadeRepository>();
             services.AddScoped<Domain.Repository.ILoginRepository, Repository.Repository.LoginRepository>();
+            services.AddScoped<Domain.Repository.IMensagemRepository, Repository.Repository.MensagemRepository>();
+            services.AddScoped<Domain.Repository.IPrestadorRepository, Repository.Repository.PrestadorRepository>();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -57,6 +72,7 @@ namespace HelpInc
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseSession();
             app.UseCookiePolicy();
 
             app.UseMvc(routes =>
