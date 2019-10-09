@@ -14,8 +14,8 @@
             resizePopup();
         },
         delay: {
-            show: 100,
-            hide: 300
+            show: 300,
+            hide: 500
         }
     });
 });
