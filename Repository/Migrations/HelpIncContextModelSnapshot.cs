@@ -17,45 +17,6 @@ namespace Repository.Migrations
                 .HasAnnotation("ProductVersion", "2.2.6-servicing-10079")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("Domain.DTO.Empresa", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<long>("Cnpj")
-                        .HasMaxLength(14);
-
-                    b.Property<long>("IdEndereco");
-
-                    b.Property<long>("IdLogin");
-
-                    b.Property<string>("NomeFantasia")
-                        .IsRequired()
-                        .HasColumnType("varchar(60)")
-                        .HasMaxLength(60);
-
-                    b.Property<string>("RazaoSocial")
-                        .HasMaxLength(60);
-
-                    b.Property<int>("Telefone")
-                        .HasColumnType("int(10)")
-                        .HasMaxLength(10);
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("Cnpj")
-                        .IsUnique();
-
-                    b.HasIndex("IdEndereco");
-
-                    b.HasIndex("IdLogin");
-
-                    b.HasIndex("RazaoSocial")
-                        .IsUnique();
-
-                    b.ToTable("Empresa");
-                });
-
             modelBuilder.Entity("Domain.DTO.Endereco", b =>
                 {
                     b.Property<long>("Id")
@@ -202,19 +163,6 @@ namespace Repository.Migrations
                         .IsUnique();
 
                     b.ToTable("Prestador");
-                });
-
-            modelBuilder.Entity("Domain.DTO.Empresa", b =>
-                {
-                    b.HasOne("Domain.DTO.Endereco", "EmpresaEndereco")
-                        .WithMany()
-                        .HasForeignKey("IdEndereco")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("Domain.DTO.Login", "EmpresaLogin")
-                        .WithMany()
-                        .HasForeignKey("IdLogin")
-                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Domain.DTO.Habilidade", b =>

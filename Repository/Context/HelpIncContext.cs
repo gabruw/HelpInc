@@ -13,14 +13,18 @@ namespace Repository.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Ignore<Empresa>();
+            //modelBuilder.Ignore<Consumidor>();
+            //modelBuilder.Ignore<Empresa>();
             modelBuilder.Ignore<Endereco>();
+            //modelBuilder.Ignore<Grupo>();
             modelBuilder.Ignore<Habilidade>();
             modelBuilder.Ignore<Login>();
             modelBuilder.Ignore<Prestador>();
 
-            modelBuilder.ApplyConfiguration(new EmpresaConfiguration());
+            //modelBuilder.ApplyConfiguration(new ConsumidorConfiguration());
+            //modelBuilder.ApplyConfiguration(new EmpresaConfiguration());
             modelBuilder.ApplyConfiguration(new EnderecoConfiguration());
+            //modelBuilder.ApplyConfiguration(new GrupoConfiguration());
             modelBuilder.ApplyConfiguration(new HabilidadeConfiguration());
             modelBuilder.ApplyConfiguration(new LoginConfiguration());
             modelBuilder.ApplyConfiguration(new PrestadorConfiguration());
@@ -28,9 +32,13 @@ namespace Repository.Context
             base.OnModelCreating(modelBuilder);
         }
 
-        public DbSet<Empresa> Empresa { get; set; }
+        //public DbSet<Consumidor> Consumidor { get; set; }
+
+        //public DbSet<Empresa> Empresa { get; set; }
 
         public DbSet<Endereco> Endereco { get; set; }
+
+        //public DbSet<Grupo> Grupo { get; set; }
 
         public DbSet<Habilidade> Habilidade { get; set; }
 
