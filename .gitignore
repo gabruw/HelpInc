@@ -395,3 +395,16 @@ Auxiliary/obj/Auxiliary.csproj.nuget.cache
 *.props
 *.cache
 .vs/HelpInc/v16/.suo
+Repository/obj/Debug/netstandard2.0/Repository.pdb
+HelpInc/bin/Debug/netcoreapp2.2/Domain.pdb
+Domain/obj/Debug/netstandard2.0/Domain.pdb
+Domain/obj/Debug/netstandard2.0/Domain.csprojAssemblyReference.cache
+Domain/bin/Debug/netstandard2.0/Domain.pdb
+.vs/HelpInc/DesignTimeBuild/.dtbcache
+HelpInc/obj/Debug/netcoreapp2.2/HelpInc.Views.dll
+HelpInc/obj/Debug/netcoreapp2.2/HelpInc.Views.pdb
+Repository/bin/Debug/netstandard2.0/Domain.pdb
+Repository/bin/Debug/netstandard2.0/Repository.pdb
+Repository/Context/HelpIncContext.cs
+Repository/obj/Debug/netstandard2.0/Repository.pdb
+Repository/obj/Debug/netstandard2.0/Repository.csprojAssemblyReference.cache

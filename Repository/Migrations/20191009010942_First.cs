@@ -43,36 +43,6 @@ namespace Repository.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Empresa",
-                columns: table => new
-                {
-                    Id = table.Column<long>(nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    IdLogin = table.Column<long>(nullable: false),
-                    IdEndereco = table.Column<long>(nullable: false),
-                    NomeFantasia = table.Column<string>(type: "varchar(60)", maxLength: 60, nullable: false),
-                    RazaoSocial = table.Column<string>(maxLength: 60, nullable: true),
-                    Telefone = table.Column<int>(type: "int(10)", maxLength: 10, nullable: false),
-                    Cnpj = table.Column<long>(maxLength: 14, nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Empresa", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Empresa_Endereco_IdEndereco",
-                        column: x => x.IdEndereco,
-                        principalTable: "Endereco",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Empresa_Login_IdLogin",
-                        column: x => x.IdLogin,
-                        principalTable: "Login",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Prestador",
                 columns: table => new
                 {
@@ -127,28 +97,6 @@ namespace Repository.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Empresa_Cnpj",
-                table: "Empresa",
-                column: "Cnpj",
-                unique: true);
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Empresa_IdEndereco",
-                table: "Empresa",
-                column: "IdEndereco");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Empresa_IdLogin",
-                table: "Empresa",
-                column: "IdLogin");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Empresa_RazaoSocial",
-                table: "Empresa",
-                column: "RazaoSocial",
-                unique: true);
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Login_Email",
                 table: "Login",
                 column: "Email",
@@ -179,9 +127,6 @@ namespace Repository.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "Empresa");
-
             migrationBuilder.DropTable(
                 name: "Habilidade");
 

@@ -35,10 +35,28 @@ namespace HelpInc.Controllers
 
             Login entitylogin = _loginRepository.Logar(serializeLogin);
 
-            ////if ()
-            ////{
+            if (entitylogin.Id != 0 && entitylogin.Email != null && entitylogin.Senha != null)
+            {
+                switch (entitylogin.Tipo)
+                {
+                    case 'C':
+                        break;
+                    case 'P':
+                        break;
+                    case 'E':
+                        break;
+                }
 
-            //}
+                return View("~/Views/Login/Index.cshtml");
+            }
+            else if(entitylogin.Id == 0)
+            {
+                ViewBag["Erro"] = "Conta não registrada!";
+            }
+            else if (entitylogin.Tipo != 'C' && entitylogin.Tipo != 'P' && entitylogin.Tipo != 'E')
+            {
+                ViewBag["Erro"] = "Tipo de conta inválido!";
+            }
 
             return View("~/Views/System/Index.cshtml", entitylogin);
         }
