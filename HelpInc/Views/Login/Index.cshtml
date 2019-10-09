@@ -4,8 +4,6 @@
     Layout = "_Login";
 }
 
-@model Domain.DTO.Login
-
 <div class="ui middle aligned center aligned grid">
     <div class="column">
         <div id="Contents">
@@ -17,7 +15,7 @@
                         <div class="ui label">
                             <i class="fas fa-user"></i>
                         </div>
-                        <input type="text" asp-for="Email" id="Input-email" name="email" placeholder="E-mail" required>
+                        <input type="text" id="Input-email" name="email" placeholder="E-mail" required>
                     </div>
                 </div>
 
@@ -26,7 +24,7 @@
                         <div class="ui label">
                             <i class="fas fa-key"></i>
                         </div>
-                        <input type="password" asp-for="Senha" id="Input-password" name="password" placeholder="Senha" required>
+                        <input type="password" id="Input-password" name="password" placeholder="Senha" required>
                     </div>
                 </div>
 

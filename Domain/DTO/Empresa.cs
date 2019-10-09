@@ -40,6 +40,9 @@ namespace Domain.DTO
         [MaxLength(14)]
         public long Cnpj { get; set; }
 
+        [MaxLength(1000)]
+        public string Imagem { get; set; }
+
         public override void Validate()
         {
             ClearValidateMensages();
