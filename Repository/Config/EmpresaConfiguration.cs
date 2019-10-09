@@ -16,6 +16,7 @@ namespace Repository.Config
             builder.HasIndex(emp => emp.RazaoSocial).IsUnique();
             builder.Property(emp => emp.Telefone).IsRequired().HasMaxLength(10).HasColumnType("int(10)");
             builder.HasIndex(emp => emp.Cnpj).IsUnique();
+            builder.Property(emp => emp.Imagem).HasMaxLength(1000).HasColumnType("varchar(1000)");
         }
     }
 }

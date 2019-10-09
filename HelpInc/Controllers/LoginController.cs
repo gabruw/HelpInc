@@ -30,7 +30,7 @@ namespace HelpInc.Controllers
         public ActionResult Logar(IFormCollection dataLogin)
         {
             Login serializeLogin = new Login();
-            serializeLogin.Email = dataLogin["login"];
+            serializeLogin.Email = dataLogin["email"];
             serializeLogin.Senha = dataLogin["password"];
 
             Login entitylogin = _loginRepository.Logar(serializeLogin);
