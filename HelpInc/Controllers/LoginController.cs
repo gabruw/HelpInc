@@ -12,10 +12,16 @@ namespace HelpInc.Controllers
     public class LoginController : Controller
     {
         private readonly ILoginRepository _loginRepository;
+        private readonly IEmpresaRepository _empresaRepository;
+        private readonly IPrestadorRepository _prestadorRepository;
+        private readonly IConsumidorRepository _consumidorRepository;
 
-        public LoginController(ILoginRepository loginRepository)
+        public LoginController(ILoginRepository loginRepository, IPrestadorRepository prestadorRepository, IEmpresaRepository empresaRepository, IConsumidorRepository consumidorRepository)
         {
             _loginRepository = loginRepository;
+            _empresaRepository = empresaRepository;
+            _prestadorRepository = prestadorRepository;
+            _consumidorRepository = consumidorRepository
         }
 
         // GET: Login
@@ -40,6 +46,7 @@ namespace HelpInc.Controllers
                 switch (entitylogin.Tipo)
                 {
                     case 'C':
+                        Consumidor entityConsumidor = _consumidorRepository.GetbyLoginId(entitylogin.Id);
                         break;
                     case 'P':
                         break;
