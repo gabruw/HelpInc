@@ -1,0 +1,13 @@
+﻿.glide__slides {
+    margin: 0px !important;
+}
+
+.glide__slide > img {
+    width: 100%;
+    height: 520px;
+}
+
+.glide__bullet, .glide__bullets {
+    top: 500px !important;
+    cursor: initial !important;
+}

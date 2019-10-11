@@ -21,7 +21,7 @@ namespace HelpInc.Controllers
             _loginRepository = loginRepository;
             _empresaRepository = empresaRepository;
             _prestadorRepository = prestadorRepository;
-            _consumidorRepository = consumidorRepository
+            _consumidorRepository = consumidorRepository;
         }
 
         // GET: Login

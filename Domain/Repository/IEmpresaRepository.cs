@@ -2,7 +2,7 @@
 
 namespace Domain.Repository
 {
-    public interface IHabilidadeRepository : IBaseRepository<Habilidade>
+    public interface IEmpresaRepository : IBaseRepository<Empresa>
     {
         Empresa GetbyLoginId(long LoginId);
     }

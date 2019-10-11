@@ -5,7 +5,7 @@
         gap: 10,
         perView: 1,
         startAt: 0,
-        autoplay: 3000,
+        autoplay: 6000,
         hoverpause: true,
         rewind: true,
         rewindDuration: 8000,
