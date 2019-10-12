@@ -15,12 +15,12 @@ namespace Domain.DTO
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long Id { get; set; }
 
-        public virtual ICollection<Prestador> GrupoPrestador { get; set; }
-
         public long IdPrestadorLider { get; set; }
 
         [ForeignKey("IdPrestadorLider")]
         public virtual Prestador GrupoPrestadorLider { get; set; }
+
+        public virtual ICollection<Prestador> GrupoPrestador { get; set; }
 
         [MinLength(3)]
         [MaxLength(60)]
@@ -29,7 +29,6 @@ namespace Domain.DTO
         [MaxLength(500)]
         public string Descricao { get; set; }
 
- 
         [MaxLength(1000)]
         public string Imagem { get; set; }
 

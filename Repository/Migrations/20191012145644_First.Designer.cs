@@ -9,7 +9,7 @@ using Repository.Context;
 namespace Repository.Migrations
 {
     [DbContext(typeof(HelpIncContext))]
-    [Migration("20191012034059_First")]
+    [Migration("20191012145644_First")]
     partial class First
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -234,6 +234,33 @@ namespace Repository.Migrations
                         .IsUnique();
 
                     b.ToTable("Login");
+                });
+
+            modelBuilder.Entity("Domain.DTO.Mensagem", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("CaminhoTxt")
+                        .IsRequired()
+                        .HasColumnType("varchar(255)")
+                        .HasMaxLength(255);
+
+                    b.Property<DateTime>("Data")
+                        .HasColumnType("date")
+                        .HasMaxLength(8);
+
+                    b.Property<long>("IdDestinatario")
+                        .HasColumnType("bigint(11)")
+                        .HasMaxLength(1);
+
+                    b.Property<long>("IdRemetente")
+                        .HasColumnType("bigint(11)")
+                        .HasMaxLength(1);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Mensagem");
                 });
 
             modelBuilder.Entity("Domain.DTO.Prestador", b =>

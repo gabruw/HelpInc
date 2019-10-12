@@ -14,9 +14,9 @@ namespace Repository.Repository
             Context = helpIncContext;
         }
 
-        public Consumidor GetbyIdLogin(long LoginId)
+        public Consumidor GetbyIdLogin(long IdLogin)
         {
-            return Context.Consumidor.Where(x => x.IdLogin == LoginId).FirstOrDefault();
+            return Context.Consumidor.Where(x => x.IdLogin == IdLogin).FirstOrDefault();
         }
     }
 }

@@ -19,6 +19,7 @@ namespace Repository.Context
             modelBuilder.Ignore<Grupo>();
             modelBuilder.Ignore<Habilidade>();
             modelBuilder.Ignore<Login>();
+            modelBuilder.Ignore<Mensagem>();
             modelBuilder.Ignore<Prestador>();
 
             modelBuilder.ApplyConfiguration(new ConsumidorConfiguration());
@@ -27,6 +28,7 @@ namespace Repository.Context
             modelBuilder.ApplyConfiguration(new GrupoConfiguration());
             modelBuilder.ApplyConfiguration(new HabilidadeConfiguration());
             modelBuilder.ApplyConfiguration(new LoginConfiguration());
+            modelBuilder.ApplyConfiguration(new MensagemConfiguration());
             modelBuilder.ApplyConfiguration(new PrestadorConfiguration());
 
             base.OnModelCreating(modelBuilder);
@@ -43,6 +45,8 @@ namespace Repository.Context
         public DbSet<Habilidade> Habilidade { get; set; }
 
         public DbSet<Login> Login { get; set; }
+
+        public DbSet<Mensagem> Mensagem { get; set; }
         
         public DbSet<Prestador> Prestador { get; set; }
     }

@@ -43,27 +43,27 @@ namespace HelpInc.Controllers
             serializeLogin.Email = dataLogin["email"];
             serializeLogin.Senha = dataLogin["password"];
 
-            Login entitylogin = _loginRepository.Logar(serializeLogin);
+            Login entityLogin = _loginRepository.Logar(serializeLogin);
 
-            if (entitylogin.Id != 0 && entitylogin.Email != null && entitylogin.Senha != null)
+            if (entityLogin.Id != 0 && entityLogin.Email != null && entityLogin.Senha != null)
             {
                 string json = string.Empty;
-                switch (entitylogin.Tipo)
+                switch (entityLogin.Tipo)
                 {
                     case 'C':
-                        Consumidor entityConsumidor = _consumidorRepository.GetbyIdLogin(entitylogin.Id);
+                        Consumidor entityConsumidor = _consumidorRepository.GetbyIdLogin(entityLogin.Id);
 
                         json = JsonConvert.SerializeObject(entityConsumidor);
                         HttpContext.Session.SetString("DataConsumidor", json);
                         break;
                     case 'P':
-                        Prestador entityPrestador = _prestadorRepository.GetbyIdLogin(entitylogin.Id);
+                        Prestador entityPrestador = _prestadorRepository.GetbyIdLogin(entityLogin.Id);
 
                         json = JsonConvert.SerializeObject(entityPrestador);
                         HttpContext.Session.SetString("DataPrestador", json);
                         break;
                     case 'E':
-                        Empresa entityEmpresa = _empresaRepository.GetbyIdLogin(entitylogin.Id);
+                        Empresa entityEmpresa = _empresaRepository.GetbyIdLogin(entityLogin.Id);
 
                         json = JsonConvert.SerializeObject(entityEmpresa);
                         HttpContext.Session.SetString("DataEmpresa", json);
@@ -75,16 +75,16 @@ namespace HelpInc.Controllers
 
                 return View("~/Views/Login/Index.cshtml");
             }
-            else if(entitylogin.Id == 0)
+            else if(entityLogin.Id == 0)
             {
                 ViewBag["Erro"] = "Conta não registrada!";
             }
-            else if (entitylogin.Tipo != 'C' && entitylogin.Tipo != 'P' && entitylogin.Tipo != 'E')
+            else if (entityLogin.Tipo != 'C' && entityLogin.Tipo != 'P' && entityLogin.Tipo != 'E')
             {
                 ViewBag["Erro"] = "Tipo de conta inválido!";
             }
 
-            return View("~/Views/System/Index.cshtml", entitylogin);
+            return View("~/Views/System/Index.cshtml", entityLogin);
         }
 
         // GET: Login/Create

@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Repository.Migrations
@@ -40,6 +41,22 @@ namespace Repository.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Login", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Mensagem",
+                columns: table => new
+                {
+                    Id = table.Column<long>(nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    IdDestinatario = table.Column<long>(type: "bigint(11)", maxLength: 1, nullable: false),
+                    IdRemetente = table.Column<long>(type: "bigint(11)", maxLength: 1, nullable: false),
+                    CaminhoTxt = table.Column<string>(type: "varchar(255)", maxLength: 255, nullable: false),
+                    Data = table.Column<DateTime>(type: "date", maxLength: 8, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Mensagem", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -295,6 +312,9 @@ namespace Repository.Migrations
 
             migrationBuilder.DropTable(
                 name: "Habilidade");
+
+            migrationBuilder.DropTable(
+                name: "Mensagem");
 
             migrationBuilder.DropTable(
                 name: "Endereco");

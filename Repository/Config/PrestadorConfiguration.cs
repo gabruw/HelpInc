@@ -11,6 +11,7 @@ namespace Repository.Config
             builder.HasKey(pre => pre.Id);
             builder.HasOne(pre => pre.EmpresaLogin).WithMany().HasForeignKey(pre => pre.IdLogin);
             builder.HasOne(pre => pre.EmpresaEndereco).WithMany().HasForeignKey(pre => pre.IdEndereco);
+            builder.HasOne(pre => pre.GrupoPrestador).WithMany(gru => gru.GrupoPrestador);
             builder.HasMany(pre => pre.HabilidadePrestador).WithOne(hab => hab.PrestadorHabilidade).HasForeignKey(hab => hab.Id);
 
             builder.Property(pre => pre.Nome).IsRequired().HasMaxLength(255).HasColumnType("varchar(255)");
