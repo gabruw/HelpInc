@@ -25,7 +25,9 @@ namespace Domain.DTO
         [ForeignKey("IdEndereco")]
         public virtual Endereco EmpresaEndereco { get; set; }
 
-        // Somente para o mapeamento do Grupo
+        public long? IdGrupo { get; set; }
+
+        [ForeignKey("IdGrupo")]
         public virtual Grupo GrupoPrestador { get; set; }
 
         public virtual ICollection<Habilidade> HabilidadePrestador { get; set; }
@@ -38,8 +40,8 @@ namespace Domain.DTO
         public string Sobrenome { get; set; }
 
         [MinLength(10)]
-        [MaxLength(10)]
-        public int Telefone { get; set; }
+        [MaxLength(12)]
+        public long? Telefone { get; set; }
 
         [MinLength(11)]
         [MaxLength(11)]
@@ -51,7 +53,7 @@ namespace Domain.DTO
 
         [MinLength(9)]
         [MaxLength(9)]
-        public int Rg { get; set; }
+        public long Rg { get; set; }
 
         [MaxLength(1000)]
         public string Imagem { get; set; }

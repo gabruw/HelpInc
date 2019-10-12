@@ -2,7 +2,7 @@
     height: 200px;
 }
 
-Main-content > .row-grey {
+#Main-content > .row-grey {
     background-color: #F2F2F2 !important;
 }
 

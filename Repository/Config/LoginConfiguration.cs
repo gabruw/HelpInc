@@ -10,9 +10,9 @@ namespace Repository.Config
         {
             builder.HasKey(log => log.Id);
 
-            builder.HasIndex(log => log.Email).IsUnique();
-            builder.Property(log => log.Senha).IsRequired().HasMaxLength(40).HasColumnType("varchar(40)");
-            builder.Property(log => log.Tipo).IsRequired().HasMaxLength(1).HasColumnType("char(1)");
+            builder.HasIndex(log => log.Email).IsUnique(true);
+            builder.Property(log => log.Senha).IsRequired(true).HasMaxLength(40).HasColumnType("varchar(40)");
+            builder.Property(log => log.Tipo).IsRequired(true).HasMaxLength(1).HasColumnType("char(1)");
         }
     }
 }

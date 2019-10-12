@@ -47,33 +47,38 @@ namespace HelpInc.Controllers
 
             if (entityLogin.Id != 0 && entityLogin.Email != null && entityLogin.Senha != null)
             {
-                string json = string.Empty;
+                string jsonEntity = string.Empty;
+                long idEndereco = 0;
                 switch (entityLogin.Tipo)
                 {
                     case 'C':
                         Consumidor entityConsumidor = _consumidorRepository.GetbyIdLogin(entityLogin.Id);
+                        idEndereco = entityConsumidor.IdEndereco;
 
-                        json = JsonConvert.SerializeObject(entityConsumidor);
-                        HttpContext.Session.SetString("DataConsumidor", json);
+                        jsonEntity = JsonConvert.SerializeObject(entityConsumidor);
                         break;
                     case 'P':
                         Prestador entityPrestador = _prestadorRepository.GetbyIdLogin(entityLogin.Id);
+                        idEndereco = entityPrestador.IdEndereco;
 
-                        json = JsonConvert.SerializeObject(entityPrestador);
-                        HttpContext.Session.SetString("DataPrestador", json);
+                        jsonEntity = JsonConvert.SerializeObject(entityPrestador);
                         break;
                     case 'E':
                         Empresa entityEmpresa = _empresaRepository.GetbyIdLogin(entityLogin.Id);
+                        idEndereco = entityEmpresa.IdEndereco;
 
-                        json = JsonConvert.SerializeObject(entityEmpresa);
-                        HttpContext.Session.SetString("DataEmpresa", json);
+                        jsonEntity = JsonConvert.SerializeObject(entityEmpresa);
                         break;
                 }
 
                 
-                //Endereco entityEndereco = _enderecoRepository.GetbyIdEndereco();
+                Endereco entityEndereco = _enderecoRepository.GetbyIdEndereco(idEndereco);
+                HttpContext.Session.SetString("DadosUsuario", jsonEntity);
 
-                return View("~/Views/Login/Index.cshtml");
+                string jsonEndereco = JsonConvert.SerializeObject(entityEndereco);
+                HttpContext.Session.SetString("DadosEndereco", jsonEndereco);
+
+                return View("~/Views/System/Index.cshtml");
             }
             else if(entityLogin.Id == 0)
             {
@@ -84,7 +89,7 @@ namespace HelpInc.Controllers
                 ViewBag["Erro"] = "Tipo de conta inválido!";
             }
 
-            return View("~/Views/System/Index.cshtml", entityLogin);
+            return View("~/Views/System/Index.cshtml");
         }
 
         // GET: Login/Create

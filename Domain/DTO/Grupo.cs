@@ -20,7 +20,7 @@ namespace Domain.DTO
         [ForeignKey("IdPrestadorLider")]
         public virtual Prestador GrupoPrestadorLider { get; set; }
 
-        public virtual ICollection<Prestador> GrupoPrestador { get; set; }
+        public virtual ICollection<Prestador> PrestadorGrupo { get; set; }
 
         [MinLength(3)]
         [MaxLength(60)]

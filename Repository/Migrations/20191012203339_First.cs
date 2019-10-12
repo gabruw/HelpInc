@@ -68,10 +68,11 @@ namespace Repository.Migrations
                     IdLogin = table.Column<long>(nullable: false),
                     IdEndereco = table.Column<long>(nullable: false),
                     Nome = table.Column<string>(type: "varchar(255)", maxLength: 255, nullable: false),
-                    Telefone = table.Column<int>(type: "int(10)", maxLength: 10, nullable: false),
+                    Sobrenome = table.Column<string>(type: "varchar(255)", maxLength: 255, nullable: true),
+                    Telefone = table.Column<long>(type: "bigint(12)", maxLength: 12, nullable: false),
                     Celular = table.Column<long>(type: "bigint(11)", maxLength: 11, nullable: true),
                     Cpf = table.Column<long>(maxLength: 11, nullable: false),
-                    Rg = table.Column<int>(maxLength: 9, nullable: false),
+                    Rg = table.Column<long>(maxLength: 9, nullable: false),
                     Imagem = table.Column<string>(type: "varchar(1000)", maxLength: 1000, nullable: true)
                 },
                 constraints: table =>
@@ -130,12 +131,13 @@ namespace Repository.Migrations
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     IdLogin = table.Column<long>(nullable: false),
                     IdEndereco = table.Column<long>(nullable: false),
+                    IdGrupo = table.Column<long>(nullable: true),
                     Nome = table.Column<string>(type: "varchar(255)", maxLength: 255, nullable: false),
                     Sobrenome = table.Column<string>(type: "varchar(255)", maxLength: 255, nullable: true),
-                    Telefone = table.Column<int>(type: "int(10)", maxLength: 10, nullable: false),
+                    Telefone = table.Column<long>(type: "bigint(12)", maxLength: 12, nullable: false),
                     Celular = table.Column<long>(type: "bigint(11)", maxLength: 11, nullable: true),
                     Cpf = table.Column<long>(maxLength: 11, nullable: false),
-                    Rg = table.Column<int>(maxLength: 9, nullable: false),
+                    Rg = table.Column<long>(maxLength: 9, nullable: false),
                     Imagem = table.Column<string>(type: "varchar(1000)", maxLength: 1000, nullable: true)
                 },
                 constraints: table =>
@@ -164,7 +166,7 @@ namespace Repository.Migrations
                     IdPrestadorLider = table.Column<long>(nullable: false),
                     Nome = table.Column<string>(maxLength: 60, nullable: true),
                     Descricao = table.Column<string>(type: "varchar(500)", maxLength: 500, nullable: false),
-                    Imagem = table.Column<string>(type: "varchar(1000)", maxLength: 1000, nullable: false)
+                    Imagem = table.Column<string>(type: "varchar(1000)", maxLength: 1000, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -183,6 +185,7 @@ namespace Repository.Migrations
                 {
                     Id = table.Column<long>(nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    IdPrestador = table.Column<long>(nullable: false),
                     Nivel = table.Column<string>(type: "char(1)", maxLength: 1, nullable: false),
                     Descricao = table.Column<string>(type: "varchar(300)", maxLength: 300, nullable: true),
                     ValorBase = table.Column<long>(type: "bigint(15)", maxLength: 15, nullable: false)
@@ -271,6 +274,11 @@ namespace Repository.Migrations
                 column: "IdEndereco");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Prestador_IdGrupo",
+                table: "Prestador",
+                column: "IdGrupo");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Prestador_IdLogin",
                 table: "Prestador",
                 column: "IdLogin");
@@ -282,12 +290,12 @@ namespace Repository.Migrations
                 unique: true);
 
             migrationBuilder.AddForeignKey(
-                name: "FK_Prestador_Grupo_Id",
+                name: "FK_Prestador_Grupo_IdGrupo",
                 table: "Prestador",
-                column: "Id",
+                column: "IdGrupo",
                 principalTable: "Grupo",
                 principalColumn: "Id",
-                onDelete: ReferentialAction.Cascade);
+                onDelete: ReferentialAction.Restrict);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

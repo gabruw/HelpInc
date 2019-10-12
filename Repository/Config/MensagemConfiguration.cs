@@ -9,10 +9,10 @@ namespace Repository.Config
         public void Configure(EntityTypeBuilder<Mensagem> builder)
         {
             builder.HasKey(men => men.Id);
-            builder.Property(men => men.IdDestinatario).IsRequired().HasMaxLength(1).HasColumnType("bigint(11)");
-            builder.Property(men => men.IdRemetente).IsRequired().HasMaxLength(1).HasColumnType("bigint(11)");
-            builder.Property(men => men.CaminhoTxt).IsRequired().HasMaxLength(255).HasColumnType("varchar(255)");
-            builder.Property(men => men.Data).IsRequired().HasMaxLength(8).HasColumnType("date");
+            builder.Property(men => men.IdDestinatario).IsRequired(true).HasMaxLength(1).HasColumnType("bigint(11)");
+            builder.Property(men => men.IdRemetente).IsRequired(true).HasMaxLength(1).HasColumnType("bigint(11)");
+            builder.Property(men => men.CaminhoTxt).IsRequired(true).HasMaxLength(255).HasColumnType("varchar(255)");
+            builder.Property(men => men.Data).IsRequired(true).HasMaxLength(8).HasColumnType("date");
         } 
     }
 }

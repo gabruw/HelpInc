@@ -14,7 +14,9 @@ namespace Domain.DTO
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long Id { get; set; }
 
-        // Somente para o mapeamento do Prestador
+        public long IdPrestador { get; set; }
+
+        [ForeignKey("IdPrestador")]
         public virtual Prestador PrestadorHabilidade { get; set; }
 
         [MinLength(1)]

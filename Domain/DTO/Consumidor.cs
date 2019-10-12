@@ -28,9 +28,12 @@ namespace Domain.DTO
         [MaxLength(255)]
         public string Nome { get; set; }
 
+        [MaxLength(255)]
+        public string Sobrenome { get; set; }
+
         [MinLength(10)]
-        [MaxLength(10)]
-        public int Telefone { get; set; }
+        [MaxLength(12)]
+        public long? Telefone { get; set; }
 
         [MinLength(11)]
         [MaxLength(11)]
@@ -42,7 +45,7 @@ namespace Domain.DTO
 
         [MinLength(9)]
         [MaxLength(9)]
-        public int Rg { get; set; }
+        public long Rg { get; set; }
 
         [MaxLength(1000)]
         public string Imagem { get; set; }

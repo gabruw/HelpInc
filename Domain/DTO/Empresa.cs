@@ -33,8 +33,8 @@ namespace Domain.DTO
         public string RazaoSocial { get; set; }
 
         [MinLength(10)]
-        [MaxLength(10)]
-        public int Telefone { get; set; }
+        [MaxLength(12)]
+        public long? Telefone { get; set; }
 
         [MinLength(14)]
         [MaxLength(14)]

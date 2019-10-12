@@ -42,12 +42,17 @@ namespace Repository.Migrations
                         .HasColumnType("varchar(255)")
                         .HasMaxLength(255);
 
-                    b.Property<int>("Rg")
+                    b.Property<long>("Rg")
                         .HasMaxLength(9);
 
-                    b.Property<int>("Telefone")
-                        .HasColumnType("int(10)")
-                        .HasMaxLength(10);
+                    b.Property<string>("Sobrenome")
+                        .HasColumnType("varchar(255)")
+                        .HasMaxLength(255);
+
+                    b.Property<long?>("Telefone")
+                        .IsRequired()
+                        .HasColumnType("bigint(12)")
+                        .HasMaxLength(12);
 
                     b.HasKey("Id");
 
@@ -166,7 +171,6 @@ namespace Repository.Migrations
                     b.Property<long>("IdPrestadorLider");
 
                     b.Property<string>("Imagem")
-                        .IsRequired()
                         .HasColumnType("varchar(1000)")
                         .HasMaxLength(1000);
 
@@ -191,6 +195,8 @@ namespace Repository.Migrations
                     b.Property<string>("Descricao")
                         .HasColumnType("varchar(300)")
                         .HasMaxLength(300);
+
+                    b.Property<long>("IdPrestador");
 
                     b.Property<string>("Nivel")
                         .IsRequired()
@@ -275,6 +281,8 @@ namespace Repository.Migrations
 
                     b.Property<long>("IdEndereco");
 
+                    b.Property<long?>("IdGrupo");
+
                     b.Property<long>("IdLogin");
 
                     b.Property<string>("Imagem")
@@ -286,16 +294,17 @@ namespace Repository.Migrations
                         .HasColumnType("varchar(255)")
                         .HasMaxLength(255);
 
-                    b.Property<int>("Rg")
+                    b.Property<long>("Rg")
                         .HasMaxLength(9);
 
                     b.Property<string>("Sobrenome")
                         .HasColumnType("varchar(255)")
                         .HasMaxLength(255);
 
-                    b.Property<int>("Telefone")
-                        .HasColumnType("int(10)")
-                        .HasMaxLength(10);
+                    b.Property<long?>("Telefone")
+                        .IsRequired()
+                        .HasColumnType("bigint(12)")
+                        .HasMaxLength(12);
 
                     b.HasKey("Id");
 
@@ -303,6 +312,8 @@ namespace Repository.Migrations
                         .IsUnique();
 
                     b.HasIndex("IdEndereco");
+
+                    b.HasIndex("IdGrupo");
 
                     b.HasIndex("IdLogin");
 
@@ -356,15 +367,14 @@ namespace Repository.Migrations
 
             modelBuilder.Entity("Domain.DTO.Prestador", b =>
                 {
-                    b.HasOne("Domain.DTO.Grupo", "GrupoPrestador")
-                        .WithMany("GrupoPrestador")
-                        .HasForeignKey("Id")
-                        .OnDelete(DeleteBehavior.Cascade);
-
                     b.HasOne("Domain.DTO.Endereco", "EmpresaEndereco")
                         .WithMany()
                         .HasForeignKey("IdEndereco")
                         .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Domain.DTO.Grupo", "GrupoPrestador")
+                        .WithMany("PrestadorGrupo")
+                        .HasForeignKey("IdGrupo");
 
                     b.HasOne("Domain.DTO.Login", "EmpresaLogin")
                         .WithMany()
