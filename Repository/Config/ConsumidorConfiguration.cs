@@ -8,16 +8,16 @@ namespace Repository.Config
     {
         public void Configure(EntityTypeBuilder<Consumidor> builder)
         {
-            builder.HasKey(pre => pre.Id);
-            builder.HasOne(pre => pre.EmpresaLogin).WithMany().HasForeignKey(pre => pre.IdLogin);
-            builder.HasOne(pre => pre.EmpresaEndereco).WithMany().HasForeignKey(pre => pre.IdEndereco);
+            builder.HasKey(con => con.Id);
+            builder.HasOne(con => con.EmpresaLogin).WithMany().HasForeignKey(con => con.IdLogin);
+            builder.HasOne(con => con.EmpresaEndereco).WithMany().HasForeignKey(con => con.IdEndereco);
 
-            builder.Property(pre => pre.Nome).IsRequired().HasMaxLength(255).HasColumnType("varchar(255)");
-            builder.Property(pre => pre.Telefone).IsRequired().HasMaxLength(10).HasColumnType("int(10)");
-            builder.Property(pre => pre.Celular).HasMaxLength(11).HasColumnType("bigint(11)");
-            builder.HasIndex(pre => pre.Cpf).IsUnique();
-            builder.HasIndex(pre => pre.Rg).IsUnique();
-            builder.Property(pre => pre.Imagem).HasMaxLength(1000).HasColumnType("varchar(1000)");
+            builder.Property(con => con.Nome).IsRequired().HasMaxLength(255).HasColumnType("varchar(255)");
+            builder.Property(con => con.Telefone).IsRequired().HasMaxLength(10).HasColumnType("int(10)");
+            builder.Property(con => con.Celular).HasMaxLength(11).HasColumnType("bigint(11)");
+            builder.HasIndex(con => con.Cpf).IsUnique();
+            builder.HasIndex(con => con.Rg).IsUnique();
+            builder.Property(con => con.Imagem).HasMaxLength(1000).HasColumnType("varchar(1000)");
         }
     }
 }

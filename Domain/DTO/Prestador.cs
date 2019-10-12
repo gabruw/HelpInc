@@ -25,6 +25,9 @@ namespace Domain.DTO
         [ForeignKey("IdEndereco")]
         public virtual Endereco EmpresaEndereco { get; set; }
 
+        // Somente para o mapeamento do Grupo
+        public virtual Grupo GrupoPrestador { get; set; }
+
         public virtual ICollection<Habilidade> HabilidadePrestador { get; set; }
 
         [MinLength(1)]

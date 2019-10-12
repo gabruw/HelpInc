@@ -14,3 +14,12 @@ E:\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxiliary.AssemblyInfoInputs.cache
 E:\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxiliary.AssemblyInfo.cs
 E:\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxiliary.dll
 E:\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxiliary.pdb
+C:\Projects\HelpInc\Auxiliary\bin\Debug\netstandard2.0\Auxiliary.deps.json
+C:\Projects\HelpInc\Auxiliary\bin\Debug\netstandard2.0\Auxiliary.dll
+C:\Projects\HelpInc\Auxiliary\bin\Debug\netstandard2.0\Auxiliary.pdb
+C:\Projects\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxiliary.csprojAssemblyReference.cache
+C:\Projects\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxiliary.csproj.CoreCompileInputs.cache
+C:\Projects\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxiliary.AssemblyInfoInputs.cache
+C:\Projects\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxiliary.AssemblyInfo.cs
+C:\Projects\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxiliary.dll
+C:\Projects\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxiliary.pdb

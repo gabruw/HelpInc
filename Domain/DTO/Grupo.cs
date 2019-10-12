@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Domain.DTO
@@ -14,26 +15,22 @@ namespace Domain.DTO
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long Id { get; set; }
 
-        public long IdPrestador { get; set; }
-
-        [ForeignKey("IdPrestador")]
-        public virtual Prestador GrupoPrestador { get; set; }
+        public virtual ICollection<Prestador> GrupoPrestador { get; set; }
 
         public long IdPrestadorLider { get; set; }
 
         [ForeignKey("IdPrestadorLider")]
         public virtual Prestador GrupoPrestadorLider { get; set; }
 
-        [MinLength(7)]
+        [MinLength(3)]
         [MaxLength(60)]
         public string Nome { get; set; }
 
-        [MinLength(6)]
-        [MaxLength(40)]
+        [MaxLength(500)]
         public string Descricao { get; set; }
 
-        [MinLength(6)]
-        [MaxLength(40)]
+ 
+        [MaxLength(1000)]
         public string Imagem { get; set; }
 
         public override void Validate()
