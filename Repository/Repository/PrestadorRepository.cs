@@ -14,7 +14,7 @@ namespace Repository.Repository
             Context = helpIncContext;
         }
 
-        public Prestador GetbyLoginId(long LoginId)
+        public Prestador GetbyIdLogin(long LoginId)
         {
             return Context.Prestador.Where(x => x.IdLogin == LoginId).FirstOrDefault();
         }

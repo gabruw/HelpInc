@@ -14,7 +14,7 @@ namespace Repository.Repository
             Context = helpIncContext;
         }
 
-        public Empresa GetbyLoginId(long LoginId)
+        public Empresa GetbyIdLogin(long LoginId)
         {
             return Context.Empresa.Where(x => x.IdLogin == LoginId).FirstOrDefault();
         }

@@ -6,6 +6,7 @@ using Domain.DTO;
 using Domain.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace HelpInc.Controllers
 {
@@ -15,13 +16,16 @@ namespace HelpInc.Controllers
         private readonly IEmpresaRepository _empresaRepository;
         private readonly IPrestadorRepository _prestadorRepository;
         private readonly IConsumidorRepository _consumidorRepository;
+        private readonly IEnderecoRepository _enderecoRepository;
 
-        public LoginController(ILoginRepository loginRepository, IPrestadorRepository prestadorRepository, IEmpresaRepository empresaRepository, IConsumidorRepository consumidorRepository)
+        public LoginController(ILoginRepository loginRepository, IPrestadorRepository prestadorRepository, IEmpresaRepository empresaRepository, 
+            IConsumidorRepository consumidorRepository, IEnderecoRepository enderecoRepository)
         {
             _loginRepository = loginRepository;
             _empresaRepository = empresaRepository;
             _prestadorRepository = prestadorRepository;
             _consumidorRepository = consumidorRepository;
+            _enderecoRepository = enderecoRepository;
         }
 
         // GET: Login
@@ -43,16 +47,31 @@ namespace HelpInc.Controllers
 
             if (entitylogin.Id != 0 && entitylogin.Email != null && entitylogin.Senha != null)
             {
+                string json = string.Empty;
                 switch (entitylogin.Tipo)
                 {
                     case 'C':
-                        Consumidor entityConsumidor = _consumidorRepository.GetbyLoginId(entitylogin.Id);
+                        Consumidor entityConsumidor = _consumidorRepository.GetbyIdLogin(entitylogin.Id);
+
+                        json = JsonConvert.SerializeObject(entityConsumidor);
+                        HttpContext.Session.SetString("DataConsumidor", json);
                         break;
                     case 'P':
+                        Prestador entityPrestador = _prestadorRepository.GetbyIdLogin(entitylogin.Id);
+
+                        json = JsonConvert.SerializeObject(entityPrestador);
+                        HttpContext.Session.SetString("DataPrestador", json);
                         break;
                     case 'E':
+                        Empresa entityEmpresa = _empresaRepository.GetbyIdLogin(entitylogin.Id);
+
+                        json = JsonConvert.SerializeObject(entityEmpresa);
+                        HttpContext.Session.SetString("DataEmpresa", json);
                         break;
                 }
+
+                
+                //Endereco entityEndereco = _enderecoRepository.GetbyIdEndereco();
 
                 return View("~/Views/Login/Index.cshtml");
             }

@@ -4,6 +4,6 @@ namespace Domain.Repository
 {
     public interface IEmpresaRepository : IBaseRepository<Empresa>
     {
-        Empresa GetbyLoginId(long LoginId);
+        Empresa GetbyIdLogin(long IdLogin);
     }
 }
