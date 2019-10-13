@@ -3,7 +3,7 @@
 }
 
 .ui.menu {
-    background-color: rgb(27, 28, 29, 0.8) !important;
+    background-color: #1B1C1D !important;
 }
 
 .ui.popup {
@@ -17,7 +17,7 @@
 }
 
 .menu-item:hover {
-    background-color: rgb(52, 52, 64, 0.5) !important;
+    background-color: #343440 !important;
 }
 
 .button {

@@ -49,29 +49,40 @@ namespace HelpInc.Controllers
             {
                 string jsonEntity = string.Empty;
                 long idEndereco = 0;
+
+                // Dados para a Viewbag
+                string nome = string.Empty;
+
                 switch (entityLogin.Tipo)
                 {
                     case 'C':
                         Consumidor entityConsumidor = _consumidorRepository.GetbyIdLogin(entityLogin.Id);
                         idEndereco = entityConsumidor.IdEndereco;
+                        nome = entityConsumidor.Nome;
 
                         jsonEntity = JsonConvert.SerializeObject(entityConsumidor);
+                        HttpContext.Session.SetString("Tipo", "Consumidor");
                         break;
                     case 'P':
                         Prestador entityPrestador = _prestadorRepository.GetbyIdLogin(entityLogin.Id);
                         idEndereco = entityPrestador.IdEndereco;
+                        nome = entityPrestador.Nome;
 
                         jsonEntity = JsonConvert.SerializeObject(entityPrestador);
+                        HttpContext.Session.SetString("Tipo", "Prestador");
                         break;
                     case 'E':
                         Empresa entityEmpresa = _empresaRepository.GetbyIdLogin(entityLogin.Id);
                         idEndereco = entityEmpresa.IdEndereco;
+                        nome = entityEmpresa.NomeFantasia;
 
                         jsonEntity = JsonConvert.SerializeObject(entityEmpresa);
+                        HttpContext.Session.SetString("Tipo", "Empresa");
                         break;
                 }
 
-                
+                ViewBag.Nome = nome;
+
                 Endereco entityEndereco = _enderecoRepository.GetbyIdEndereco(idEndereco);
                 HttpContext.Session.SetString("DadosUsuario", jsonEntity);
 

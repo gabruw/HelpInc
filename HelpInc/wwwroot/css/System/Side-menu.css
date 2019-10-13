@@ -1,4 +1,9 @@
-﻿#active-side-menu {
+﻿/* Background-color antes da abertura do menu lateral */
+body {
+    background: beige !important;
+}
+
+#active-side-menu {
     position: absolute;
     top: 100px;
     background-color: #1B1C1D !important;
@@ -38,4 +43,9 @@
 
 .item > i {
     margin-right: 10px;
+}
+
+/* Background-color pós abertura do menu lateral */
+body.pushable > .pusher {
+    background: beige !important;
 }

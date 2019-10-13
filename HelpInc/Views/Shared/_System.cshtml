@@ -1,6 +1,4 @@
-﻿@model Domain.DTO.Login
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -12,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="~/lib/font-awesome-free/css/all.css">
 
     @* Link's CSS *@
-    <link rel="stylesheet" type="text/css" href="~/css/Generic/Superior-menu.css">
+    <link rel="stylesheet" type="text/css" href="~/css/Generic/Superior-menu-solid.css">
     <link rel="stylesheet" type="text/css" href="~/css/System/Side-menu.css">
     <link rel="stylesheet" type="text/css" href="~/css/System/Page.css">
 
@@ -38,7 +36,7 @@
         <div class="right menu">
             <div class="ui right dropdown item menu-item">
                 <img class="ui mini circular middle aligned image" src="https://semantic-ui.com/images/wireframe/image.png">
-                <span>Nome usuário</span>
+                <span>@ViewBag.Nome</span>
 
                 <div class="menu">
                     <div class="header">
@@ -75,7 +73,7 @@
     </div>
 
     @* Menu Lateral *@
-    <div class="ui sidebar inverted vertical menu">
+    <div class="ui sidebar vertical left menu overlay">
         <img id="User-img" class="ui small centered circular image" src="https://semantic-ui.com/images/wireframe/square-image.png" />
 
         <div id="Information">
