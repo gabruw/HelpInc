@@ -52,33 +52,35 @@
 
                     <div class="ui fluid popup transition hidden center aligned grid">
                         <div class="column">
-                            <div id="Row-email" class="row">
-                                <div class="field">
-                                    <div class="ui labeled input">
-                                        <div class="ui label">
-                                            <i class="fas fa-user"></i>
+                            <form class="ui large form" asp-action="Logar" asp-controller="Login" method="post">
+                                <div id="Row-email" class="row">
+                                    <div class="field">
+                                        <div class="ui labeled input">
+                                            <div class="ui label">
+                                                <i class="fas fa-user"></i>
+                                            </div>
+                                            <input id="Input-email" type="text" name="email" placeholder="E-mail">
                                         </div>
-                                        <input id="Input-email" type="text" name="email" placeholder="E-mail">
                                     </div>
                                 </div>
-                            </div>
 
-                            <div id="Row-password" class="row">
-                                <div class="field">
-                                    <div class="ui labeled input">
-                                        <div class="ui label">
-                                            <i class="fas fa-key"></i>
+                                <div id="Row-password" class="row">
+                                    <div class="field">
+                                        <div class="ui labeled input">
+                                            <div class="ui label">
+                                                <i class="fas fa-key"></i>
+                                            </div>
+                                            <input id="Input-password" type="password" name="password" placeholder="Senha">
                                         </div>
-                                        <input id="Input-password" type="password" name="password" placeholder="Senha">
                                     </div>
                                 </div>
-                            </div>
 
-                            <div id="Row-entrace" class="row">
-                                <div id="Button-entrace" class="ui fluid large teal submit button">
+                                <div id="Row-entrace" class="row">
+                                    <button type="submit" id="Button-entrace" class="ui fluid large teal submit button">
                                     ENTRAR
+                                    </button>
                                 </div>
-                            </div>
+                            </form>
 
                             <div class="row">
                                 <a id="Forgot-password" href="#">Esqueceu a senha ?</a>
