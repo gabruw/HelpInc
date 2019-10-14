@@ -1,13 +1,19 @@
 ﻿.glide__slides {
     margin: 0px !important;
+    height: 525px !important;
 }
 
 .glide__slide > img {
     width: 100%;
-    height: 520px;
+    height: 525px !important;
 }
 
-.glide__bullet, .glide__bullets {
-    top: 500px !important;
+.glide__bullets {
+    display: flex;
+    flex-direction: row;
+    bottom: 460px !important;
+}
+
+.glide__bullet {
     cursor: initial !important;
 }
