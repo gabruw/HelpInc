@@ -63,6 +63,19 @@
     color: #2FB5D4;
 }
 
+/* Imagens */
+#First-city-image {
+    margin-left: 80px !important;
+}
+
+.city-image {
+    max-width: 190px !important;
+    max-height: 330px;
+    margin-right: 25px !important;
+    margin-left: 25px !important;
+    border-radius: 10px !important;
+}
+
 /* Footer */
 #Footer-content > .row {
     height: 45px;
