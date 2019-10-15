@@ -18,22 +18,34 @@
 }
 
 #Main-content > .row-white {
-    height: 400px;
+    min-height: 400px;
 }
 
 #Main-content > .row-grey {
-    height: 400px;
+    min-height: 400px;
     background-color: #F2F2F2 !important;
 }
 
 #Mid-image {
-    height: 500px;
+    max-height: 500px;
 }
 
 /* Texto */
 #Main-content #First-column {
     text-align: center;
 }
+
+#Icons-grid {
+    margin-top: 15px;
+    text-align: center;
+    text-justify: inter-word;
+}
+
+    #Icons-grid > .header {
+        margin-right: 20px;
+        margin-left: 20px;
+        min-height: 204px !important;
+    }
 
 .Tall-title-text {
     margin-top: 20px;

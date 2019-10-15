@@ -11,7 +11,7 @@
 .glide__bullets {
     display: flex;
     flex-direction: row;
-    bottom: 460px !important;
+    top: 480px !important;
 }
 
 .glide__bullet {
