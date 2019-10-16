@@ -30,6 +30,10 @@
     max-height: 500px;
 }
 
+#Last-row {
+    min-height: 250px !important;
+}
+
 /* Texto */
 #Main-content #First-column {
     text-align: center;
@@ -91,6 +95,12 @@
     .city-image > img {
         border-radius: 5px !important;
     }
+
+
+/* Cards */
+.card-icon {
+    font-size: 20px !important
+}
 
 /* Footer */
 #Footer-content > .row {
