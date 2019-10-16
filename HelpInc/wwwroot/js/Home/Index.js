@@ -18,4 +18,8 @@
             hide: 500
         }
     });
+
+    $('#Facebook-icon').mouseover().transition('pulse');
+    $('#Instagram-icon').mouseover().transition('pulse');
+    $('#Twitter-icon').mouseover().transition('pulse');
 });
