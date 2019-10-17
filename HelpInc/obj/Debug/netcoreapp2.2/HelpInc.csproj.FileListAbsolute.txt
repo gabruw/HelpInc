@@ -178,3 +178,4 @@ C:\Projects\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\HelpInc.Views.pdb
 C:\Projects\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\HelpInc.csproj.CopyComplete
 C:\Projects\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\HelpInc.dll
 C:\Projects\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\HelpInc.pdb
+E:\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\Razor\Views\Registro\Index.cshtml.g.cs
