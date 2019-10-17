@@ -100,7 +100,7 @@ namespace HelpInc.Controllers
                 ViewBag["Erro"] = "Tipo de conta inválido!";
             }
 
-            return View("~/Views/System/Index.cshtml");
+            return View("~/Views/Login/Index.cshtml");
         }
 
         // GET: Login/Create

@@ -23,3 +23,11 @@ C:\Projects\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxiliary.AssemblyInfoInp
 C:\Projects\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxiliary.AssemblyInfo.cs
 C:\Projects\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxiliary.dll
 C:\Projects\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxiliary.pdb
+C:\Users\gabriel.frança\Documents\GitHub\HelpInc\Auxiliary\bin\Debug\netstandard2.0\Auxiliary.deps.json
+C:\Users\gabriel.frança\Documents\GitHub\HelpInc\Auxiliary\bin\Debug\netstandard2.0\Auxiliary.dll
+C:\Users\gabriel.frança\Documents\GitHub\HelpInc\Auxiliary\bin\Debug\netstandard2.0\Auxiliary.pdb
+C:\Users\gabriel.frança\Documents\GitHub\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxiliary.csprojAssemblyReference.cache
+C:\Users\gabriel.frança\Documents\GitHub\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxiliary.AssemblyInfoInputs.cache
+C:\Users\gabriel.frança\Documents\GitHub\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxiliary.AssemblyInfo.cs
+C:\Users\gabriel.frança\Documents\GitHub\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxiliary.dll
+C:\Users\gabriel.frança\Documents\GitHub\HelpInc\Auxiliary\obj\Debug\netstandard2.0\Auxiliary.pdb

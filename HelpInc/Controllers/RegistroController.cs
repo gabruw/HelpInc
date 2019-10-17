@@ -14,18 +14,6 @@ namespace HelpInc.Controllers
         {
             return View("~/Views/Registro/Index.cshtml");
         }
-        
-        // GET: Registro/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // GET: Registro/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
 
         // POST: Registro/Create
         [HttpPost]
@@ -65,12 +53,6 @@ namespace HelpInc.Controllers
             {
                 return View();
             }
-        }
-
-        // GET: Registro/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
         }
 
         // POST: Registro/Delete/5

@@ -1,7 +1,7 @@
 ﻿
 @{
-    ViewData["Title"] = "Index";
-    Layout = "_Login";
+    ViewData["Title"] = "Login";
+    Layout = "_Account";
 }
 
 <div class="ui middle aligned center aligned grid">
@@ -9,13 +9,13 @@
         <div id="Contents">
             <img src="../../images/Generic/Logo.png" class="ui centered image ">
 
-            <form class="ui large form" asp-action="Logar" asp-controller="Login" method="post">
+            <form id="Form-login" class="ui large form" asp-action="Logar" asp-controller="Login" method="post">
                 <div class="field">
                     <div class="ui labeled input">
                         <div class="ui label">
                             <i class="fas fa-user"></i>
                         </div>
-                        <input type="text" id="Input-email" name="email" placeholder="E-mail" required>
+                        <input type="text" id="Input-email" name="email" placeholder="E-mail">
                     </div>
                 </div>
 
@@ -24,7 +24,7 @@
                         <div class="ui label">
                             <i class="fas fa-key"></i>
                         </div>
-                        <input type="password" id="Input-password" name="password" placeholder="Senha" required>
+                        <input type="password" id="Input-password" name="password" placeholder="Senha">
                     </div>
                 </div>
 
