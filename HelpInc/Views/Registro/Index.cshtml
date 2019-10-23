@@ -4,238 +4,341 @@
     Layout = "_Account";
 }
 
-<div id="tela-registro">
-    <div class="ui three item menu">
-        <a class="item active" data-tab="first">CONSUMIDOR</a>
-        <a class="item" data-tab="second">PRESTADOR</a>
-        <a class="item" data-tab="third">EMPRESARIAL</a>
+<div class="ui middle aligned center aligned grid">
+    <div id="Box-Background" class="column">
+        <div id="Contents">
+            <div id="tela-registro">
+                <div class="ui three item menu">
+                    <a class="item active" data-tab="first">CONSUMIDOR</a>
+                    <a class="item" data-tab="second">PRESTADOR</a>
+                    <a class="item" data-tab="third">EMPRESARIAL</a>
+                </div>
+                 <form class="ui segment form">
+                    <div class="ui grid">
+                        <div class="row ">
+                            <div class="four wide column ">
+                                <img id="image-user" class="ui aligned image" src="../../images/Generic/User.png">
+                            </div>
+
+                            <div class="twelve wide column ">
+                                <div id="Input-Email" class="row">
+                                    <div class="column">
+                                        <div class="ui fluid input">
+                                            <div class="ui label">
+                                                <i id="Icon-Margin" class="fas fa-user"></i>
+                                            </div>
+                                            <input type="text" name="email" placeholder="E-mail">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row ">
+                                    <div class="column">
+                                        <div class="ui fluid input">
+                                            <div class="ui label">
+                                                <i id="Icon-Margin" class="fas fa-key"></i>
+                                            </div>
+                                            <input type="password" name="password" placeholder="Senha">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui tab active" data-tab="first">
+                        <div class="ui grid">
+                            <div class="row">
+                                <div class=" eight wide column">
+                                    <div class="ui fluid input">
+                                        <div class="ui label">
+                                            <i id="Icon-Margin" class="fas fa-address-card"></i>
+                                        </div>
+                                        <input type="text" name="Nome" placeholder="Nome">
+                                    </div>
+                                </div>
+
+                                <div class=" eight wide column">
+                                    <div class="ui fluid input">
+                                        <div class="ui label">
+                                            <i id="Icon-Margin" class="far fa-address-card"></i>
+                                        </div>
+                                        <input type="text" name="Sobrenome" placeholder="Sobrenome">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class=" row">
+                                <div class="eight wide column">
+                                    <div class="ui fluid input">
+                                        <div class="ui label">
+                                            <i id="Icon-Margin" class="fas fa-id-card"></i>
+                                        </div>
+                                        <input type="text" name="CPF" placeholder="CPF">
+                                    </div>
+                                </div>
+
+                                <div class="eight wide column">
+                                    <div class="ui fluid input">
+                                        <div class="ui label">
+                                            <i id="Icon-Margin" class="far fa-id-card"></i>
+                                        </div>
+                                        <input type="text" name="RG" placeholder="RG">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class=" eight wide column">
+                                    <div class="ui fluid input">
+                                        <div class="ui label">
+                                            <i id="Icon-Margin" class="fas fa-phone"></i>
+                                        </div>
+                                        <input type="text" name="Telefone" placeholder="Telefone">
+                                    </div>
+                                </div>
+
+                                <div class=" eight wide column">
+                                    <div class="ui fluid input">
+                                        <div class="ui label">
+                                            <i id="Icon-Margin" class="fas fa-mobile"></i>
+                                        </div>
+                                        <input type="text" name="Celular" placeholder="Celular">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui tab" data-tab="second">
+                        <div class="ui grid">
+                            <div class="row">
+                                <div class=" eight wide column">
+                                    <div class="ui fluid input">
+                                        <div class="ui label">
+                                            <i id="Icon-Margin" class="fas fa-address-card"></i>
+                                        </div>
+                                        <input type="text" name="Nome" placeholder="Nome">
+                                    </div>
+                                </div>
+
+                                <div class=" eight wide column">
+                                    <div class="ui fluid input">
+                                        <div class="ui label">
+                                            <i id="Icon-Margin" class="far fa-address-card"></i>
+                                        </div>
+                                        <input type="text" name="Sobrenome" placeholder="Sobrenome">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class=" row">
+                                <div class="eight wide column">
+                                    <div class="ui fluid input">
+                                        <div class="ui label">
+                                            <i id="Icon-Margin" class="fas fa-id-card"></i>
+                                        </div>
+                                        <input type="text" name="CPF" placeholder="CPF">
+                                    </div>
+                                </div>
+
+                                <div class="eight wide column">
+                                    <div class="ui fluid input">
+                                        <div class="ui label">
+                                            <i id="Icon-Margin" class="far fa-id-card"></i>
+                                        </div>
+                                        <input type="text" name="RG" placeholder="RG">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class=" eight wide column">
+                                    <div class="ui fluid input">
+                                        <div class="ui label">
+                                            <i id="Icon-Margin" class="fas fa-phone"></i>
+                                        </div>
+                                        <input type="text" name="Telefone" placeholder="Telefone">
+                                    </div>
+                                </div>
+
+                                <div class=" eight wide column">
+                                    <div class="ui fluid input">
+                                        <div class="ui label">
+                                            <i id="Icon-Margin" class="fas fa-mobile"></i>
+                                        </div>
+                                        <input type="text" name="Celular" placeholder="Celular">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui tab" data-tab="third">
+                        <div class="ui grid">
+                            <div class="row">
+                                <div class="eight wide column">
+                                    <div class="ui fluid input">
+                                        <div class="ui label">
+                                            <i id="Icon-Margin" class="fas fa-user-tie"></i>
+                                        </div>
+                                        <input type="text" name="NomeFantasia" placeholder="Nome Fantasia">
+                                    </div>
+                                </div>
+
+                                <div class="eight wide column">
+                                    <div class="ui fluid input">
+                                        <div class="ui label">
+                                            <i id="Icon-Margin" class="fas fa-users"></i>
+                                        </div>
+                                        <input type="text" name="RazaoSocial" placeholder="Razão Social">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="eight wide column">
+                                    <div class="ui fluid input">
+                                        <div class="ui label">
+                                            <i id="Icon-Margin" class="fas fa-id-card-alt"></i>
+                                        </div>
+                                        <input type="text" name="CNPJ" placeholder="CNPJ">
+                                    </div>
+                                </div>
+
+                                <div class="eight wide column">
+                                    <div class="ui fluid input">
+                                        <div class="ui label">
+                                            <i id="Icon-Margin" class="fas fa-phone"></i>
+                                        </div>
+                                        <input type="text" name="Telefone" placeholder="Telefone">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui grid">
+                        <div class="row">
+                            <div class="four wide column">
+                                <div class="ui fluid input">
+                                    <div class="ui label">
+                                        <i id="Icon-Margin" class="fas fa-globe-africa"></i>
+                                    </div>
+                                    <input type="text" name="CEP" placeholder="CEP">
+                                </div>
+                            </div>
+
+                            <div class="six wide column">
+                                <div class="ui fluid input">
+                                    <div class="ui label">
+                                        <i id="Icon-Margin" class="far fa-map"></i>
+                                    </div>
+                                    <div class="ui fluid search selection dropdown" id="Estado">
+                                        <div class="default text">Estado</div>
+                                        <div class="menu">
+                                            <div class="item" data-value="AC">Acre</div>
+                                            <div class="item" data-value="AL">Alagoas</div>
+                                            <div class="item" data-value="AP">Amapá</div>
+                                            <div class="item" data-value="AM">Amazonas</div>
+                                            <div class="item" data-value="BA">Bahia</div>
+                                            <div class="item" data-value="CE">Ceará</div>
+                                            <div class="item" data-value="DF">Distrito Federal</div>
+                                            <div class="item" data-value="ES">Espírito Santo</div>
+                                            <div class="item" data-value="GO">Goiás</div>
+                                            <div class="item" data-value="MA">Maranhão</div>
+                                            <div class="item" data-value="MT">Mato Grosso</div>
+                                            <div class="item" data-value="MS">Mato Grosso do Sul</div>
+                                            <div class="item" data-value="MG">Minas Gerais</div>
+                                            <div class="item" data-value="PA">Pará</div>
+                                            <div class="item" data-value="PB">Paraíba</div>
+                                            <div class="item" data-value="PR">Paraná</div>
+                                            <div class="item" data-value="PE">Pernambuco</div>
+                                            <div class="item" data-value="PI">Piauí</div>
+                                            <div class="item" data-value="RJ">Rio de Janeiro</div>
+                                            <div class="item" data-value="RN">Rio Grande do Norte</div>
+                                            <div class="item" data-value="RS">Rio Grande do Sul</div>
+                                            <div class="item" data-value="RO">Rondônia</div>
+                                            <div class="item" data-value="RR">Roraima</div>
+                                            <div class="item" data-value="SC">Santa Catarina</div>
+                                            <div class="item" data-value="SP">São Paulo</div>
+                                            <div class="item" data-value="SE">Sergipe</div>
+                                            <div class="item" data-value="TO">Tocantins</div>                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="six wide column">
+                                <div class="ui fluid input">
+                                    <div class="ui label">
+                                        <i id="Icon-Margin" class="fas fa-map"></i>
+                                    </div>
+                                    <div class="ui fluid search selection dropdown" id="Cidade">
+                                        <div class="default text">Cidade</div>
+                                        <div class="menu">
+                                            <div class="item" data-value="af">Afghanistan</div>
+                                            <div class="item" data-value="ax">Aland Islands</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="ten wide column">
+                                <div class="ui fluid input">
+                                    <div class="ui label">
+                                        <i id="Icon-Margin" class="fas fa-map-marker"></i>
+                                    </div>
+                                    <input type="text" name="Rua" placeholder="Rua">
+                                </div>
+                            </div>
+
+                            <div class="six wide column">
+                                <div class="ui fluid input">
+                                    <div class="ui label">
+                                        <i id="Icon-Margin" class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <input type="text" name="Bairro" placeholder="Bairro">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="eight wide column">
+                                <div class="ui fluid  input">
+                                    <div class="ui label">
+                                        <i id="Icon-Margin" class="fas fa-map-marked-alt"></i>
+                                    </div>
+                                    <input type="text" name="Numero" placeholder="Numero">
+                                </div>
+                            </div>
+
+                            <div class="eight wide column">
+                                <div class="ui fluid input">
+                                    <div class="ui label">
+                                        <i id="Icon-Margin" class="fas fa-map-pin"></i>
+                                    </div>
+                                    <input type="text" name="Complemento" placeholder="Complemento">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="sixteen wide column">
+                                <div class="ui fluid input">
+                                    <div class="ui label">
+                                        <i id="Icon-Margin" class="fas fa-search-location"></i>
+                                    </div>
+                                    <input type="text" name="Referencia" placeholder="Referencia">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <button type="submit" id="Button-register" class="ui fluid large teal submit button ">REGISTRAR</button>
+            </div>
+        </div>
     </div>
-
-    <!--<img class="ui letf top aligned medium image" src="Default_Image.png"> -->
-
-    <form class="ui segment form">
-        <h4 class="ui dividing header">Login</h4>
-        <div class="ui grid">
-            <div class="two column row">
-                <div class="wide column">
-                    <div class="ui labeled input">
-                        <input type="text" name="email" placeholder="E-mail">
-                    </div>
-                </div>
-
-                <div class="wide column">
-                    <div class="ui labeled input">
-                        <input type="password" name="password" placeholder="Senha">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="ui tab active" data-tab="first">
-            <div class="ui top attached tabular menu">
-                <h4 class="ui dividing header">Dados Pessoais</h4>
-
-                <div class="ui grid">
-                    <div class=" two column row">
-                        <div class=" wide column">
-                            <div class="ui labeled input">
-                                <input type="text" name="Nome" placeholder="Nome">
-                            </div>
-                        </div>
-
-                        <div class=" wide column">
-                            <div class="ui labeled input">
-                                <input type="text" name="Sobrenome" placeholder="Sobrenome">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="two column row">
-                        <div class=" wide column">
-                            <div class="ui labeled input">
-                                <input type="text" name="CPF" placeholder="CPF">
-                            </div>
-                        </div>
-
-                        <div class=" wide column">
-                            <div class="ui labeled input">
-                                <input type="text" name="RG" placeholder="RG">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="two column row">
-                        <div class=" wide column">
-                            <div class="ui labeled input">
-                                <input type="text" name="Telefone" placeholder="Telefone">
-                            </div>
-                        </div>
-
-                        <div class=" wide column">
-                            <div class="ui labeled input">
-                                <input type="text" name="Celular" placeholder="Celular">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="ui tab" data-tab="second">
-            <div class="ui top attached tabular menu">
-                <h4 class="ui dividing header">Dados Pessoais</h4>
-
-                <div class="ui grid">
-                    <div class=" two column row">
-                        <div class=" wide column">
-                            <div class="ui labeled input">
-                                <input type="text" name="Nome" placeholder="Nome">
-                            </div>
-                        </div>
-
-                        <div class=" wide column">
-                            <div class="ui labeled input">
-                                <input type="text" name="Sobrenome" placeholder="Sobrenome">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="two column row">
-                        <div class=" wide column">
-                            <div class="ui labeled input">
-                                <input type="text" name="CPF" placeholder="CPF">
-                            </div>
-                        </div>
-
-                        <div class=" wide column">
-                            <div class="ui labeled input">
-                                <input type="text" name="RG" placeholder="RG">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="two column row">
-                        <div class=" wide column">
-                            <div class="ui labeled input">
-                                <input type="text" name="Telefone" placeholder="Telefone">
-                            </div>
-                        </div>
-
-                        <div class=" wide column">
-                            <div class="ui labeled input">
-                                <input type="text" name="Celular" placeholder="Celular">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="ui tab" data-tab="third">
-            <div class="ui top attached tabular menu">
-                <h4 class="ui dividing header">Dados Empresariais</h4>
-                <div class="ui grid">
-                    <div class=" two column row">
-                        <div class=" wide column">
-                            <div class="ui labeled input">
-                                <input type="text" name="NomeFantasia" placeholder="Nome Fantasia">
-                            </div>
-                        </div>
-
-                        <div class=" wide column">
-                            <div class="ui labeled input">
-                                <input type="text" name="RazaoSocial" placeholder="Razão Social">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="two column row">
-                        <div class=" wide column">
-                            <div class="ui labeled input">
-                                <input type="text" name="CNPJ" placeholder="CNPJ">
-                            </div>
-                        </div>
-
-                        <div class=" wide column">
-                            <div class="ui labeled input">
-                                <input type="text" name="Telefone" placeholder="Telefone">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <h4 class="ui dividing header"> Endereço </h4>
-
-        <div class="ui grid">
-            <div class=" three column row ">
-                <div class="column">
-                    <div class="ui labeled input">
-                        <input type="text" name="CEP" placeholder="CEP">
-                    </div>
-                </div>
-
-                <div class="column">
-                    <div class="ui labeled input">
-                        <div class="ui fluid search selection dropdown" id="Estado">
-                            <div class="default text">Estado</div>
-                            <div class="menu">
-                                <div class="item" data-value="af">Afghanistan</div>
-                                <div class="item" data-value="ax">Aland Islands</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="column">
-                    <div class="ui labeled input">
-                        <div class="ui labeled fluid search selection dropdown" id="Cidade">
-                            <div class="default text">Cidade</div>
-                            <div class="menu">
-                                <div class="item" data-value="af">Afghanistan</div>
-                                <div class="item" data-value="ax">Aland Islands</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="ten wide column">
-                    <div class="ui labeled input">
-                        <input type="text" name="Rua" placeholder="Rua">
-                    </div>
-                </div>
-
-                <div class="six wide column">
-                    <div class="ui labeled input">
-                        <input type="text" name="Bairro" placeholder="Bairro">
-                    </div>
-                </div>
-            </div>
-
-            <div class=" two column row">
-                <div class="wide column">
-                    <div class="ui labeled input">
-                        <input type="text" name="Numero" placeholder="Numero">
-                    </div>
-                </div>
-
-                <div class="wide column">
-                    <div class="ui labeled input">
-                        <input type="text" name="Complemento" placeholder="Complemento">
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="wide column">
-                    <div class="ui labeled input">
-                        <input type="text" name="Referencia" placeholder="Referencia">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </form>
 </div>

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabriel.frança\\Documents\\GitHub\\HelpInc\\HelpInc\\HelpInc.csproj": {}
+    "E:\\HelpInc\\HelpInc\\HelpInc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabriel.frança\\Documents\\GitHub\\HelpInc\\Domain\\Domain.csproj": {
+    "E:\\HelpInc\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabriel.frança\\Documents\\GitHub\\HelpInc\\Domain\\Domain.csproj",
+        "projectUniqueName": "E:\\HelpInc\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\gabriel.frança\\Documents\\GitHub\\HelpInc\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\gabriel.frança\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabriel.frança\\Documents\\GitHub\\HelpInc\\Domain\\obj\\",
+        "projectPath": "E:\\HelpInc\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Jovany\\.nuget\\packages\\",
+        "outputPath": "E:\\HelpInc\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\gabriel.frança\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jovany\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -66,20 +66,20 @@
         }
       }
     },
-    "C:\\Users\\gabriel.frança\\Documents\\GitHub\\HelpInc\\HelpInc\\HelpInc.csproj": {
+    "E:\\HelpInc\\HelpInc\\HelpInc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabriel.frança\\Documents\\GitHub\\HelpInc\\HelpInc\\HelpInc.csproj",
+        "projectUniqueName": "E:\\HelpInc\\HelpInc\\HelpInc.csproj",
         "projectName": "HelpInc",
-        "projectPath": "C:\\Users\\gabriel.frança\\Documents\\GitHub\\HelpInc\\HelpInc\\HelpInc.csproj",
-        "packagesPath": "C:\\Users\\gabriel.frança\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabriel.frança\\Documents\\GitHub\\HelpInc\\HelpInc\\obj\\",
+        "projectPath": "E:\\HelpInc\\HelpInc\\HelpInc.csproj",
+        "packagesPath": "C:\\Users\\Jovany\\.nuget\\packages\\",
+        "outputPath": "E:\\HelpInc\\HelpInc\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\gabriel.frança\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jovany\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -92,8 +92,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\gabriel.frança\\Documents\\GitHub\\HelpInc\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\gabriel.frança\\Documents\\GitHub\\HelpInc\\Repository\\Repository.csproj"
+              "E:\\HelpInc\\Repository\\Repository.csproj": {
+                "projectPath": "E:\\HelpInc\\Repository\\Repository.csproj"
               }
             }
           }
@@ -147,20 +147,20 @@
         }
       }
     },
-    "C:\\Users\\gabriel.frança\\Documents\\GitHub\\HelpInc\\Repository\\Repository.csproj": {
+    "E:\\HelpInc\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabriel.frança\\Documents\\GitHub\\HelpInc\\Repository\\Repository.csproj",
+        "projectUniqueName": "E:\\HelpInc\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\gabriel.frança\\Documents\\GitHub\\HelpInc\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\gabriel.frança\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabriel.frança\\Documents\\GitHub\\HelpInc\\Repository\\obj\\",
+        "projectPath": "E:\\HelpInc\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\Jovany\\.nuget\\packages\\",
+        "outputPath": "E:\\HelpInc\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\gabriel.frança\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jovany\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -173,8 +173,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\gabriel.frança\\Documents\\GitHub\\HelpInc\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\gabriel.frança\\Documents\\GitHub\\HelpInc\\Domain\\Domain.csproj"
+              "E:\\HelpInc\\Domain\\Domain.csproj": {
+                "projectPath": "E:\\HelpInc\\Domain\\Domain.csproj"
               }
             }
           }
