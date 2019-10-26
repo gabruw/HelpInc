@@ -10,6 +10,7 @@
 
 .grid > .row {
     padding: 13px !important;
+    margin: -3px !important;
 }
 
 .ui.dropdown .menu > .item {
@@ -22,14 +23,21 @@
     height: 100px;
 }
 
+.ui.input > input {
+    border-radius: 0px !important;
+}
+
 .tab {
-    width: 600px !important;
+    width: 726px !important;
     margin-top: 10px !important;
     margin-bottom: 10px;
 }
+    .tab > .label {
+        width: 410px !important;
+    }
 
 .ui.button {
-    border-radius: 0 !important;
+    border-radius: 0px !important;
     background-color: #313540 !important;
 }
 
@@ -38,15 +46,22 @@
         transition: 1s !important;
     }
 
-#Button-entrace {
-    margin-top: 20px;
-    margin-bottom: 10px;
+#Button-Register {
+    margin-left: 120px !important;
+}
+
+#Button-Return {
+   margin-left: 50px !important;
 }
 
 #Box-Background {
     background-color: #ffffff;
-    width: 700px !important;
-    margin-top: 5px !important;
+    width: 750px !important;
+    margin-top: 35px !important;
+}
+
+#Box-Left-Column {
+    width: 310px !important;
 }
 
 #Contents {
@@ -63,3 +78,4 @@
     width: 7px !important;
     height: 7px !important;
 }
+
