@@ -179,23 +179,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jovany\\.nuget\\packages\\": {},
+    "C:\\Users\\gabrielrigolon\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\HelpInc\\Auxiliary\\Auxiliary.csproj",
+      "projectUniqueName": "C:\\Projects\\HelpInc\\Auxiliary\\Auxiliary.csproj",
       "projectName": "Auxiliary",
-      "projectPath": "E:\\HelpInc\\Auxiliary\\Auxiliary.csproj",
-      "packagesPath": "C:\\Users\\Jovany\\.nuget\\packages\\",
-      "outputPath": "E:\\HelpInc\\Auxiliary\\obj\\",
+      "projectPath": "C:\\Projects\\HelpInc\\Auxiliary\\Auxiliary.csproj",
+      "packagesPath": "C:\\Users\\gabrielrigolon\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\HelpInc\\Auxiliary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Jovany\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gabrielrigolon\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
