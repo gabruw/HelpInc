@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="~/lib/semantic/semantic.css">
     <link rel="stylesheet" type="text/css" href="~/lib/font-awesome-free/css/all.css">
 
-    @* Link's CSS *@
+    @* Link's CSS Geral *@
     <link rel="stylesheet" type="text/css" href="~/css/Generic/Superior-menu.css">
 
     @* Font's *@
@@ -19,20 +19,18 @@
     @switch (ViewData["Title"])
     {
         case "Login":
-            @* Link's CSS *@
+            @* Link's CSS Especifico *@
             <link rel="stylesheet" type="text/css" href="~/css/Login/Index.css">
-            <link rel="stylesheet" type="text/css" href="~/css/Generic/Superior-menu.css">
 
-            @* Link's JS *@
+            @* Link's JS Especifico *@
             <script defer type="text/javascript" src="~/js/Login/Index.js"></script>
             <script defer type="text/javascript" src="~/js/Login/Validation.js"></script>
             break;
         case "Registro":
-            @* Link's CSS *@
+            @* Link's CSS Especifico *@
             <link rel="stylesheet" type="text/css" href="~/css/Registro/Index.css">
-            <link rel="stylesheet" type="text/css" href="~/css/Generic/Superior-menu.css">
 
-            @* Link's JS *@
+            @* Link's JS Especifico *@
             <script defer type="text/javascript" src="~/js/Registro/Index.js"></script>
             break;
     }
