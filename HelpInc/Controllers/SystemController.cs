@@ -15,5 +15,10 @@ namespace HelpInc.Controllers
         {
             return View("~/Views/System/Index.cshtml");
         }
+
+        public IActionResult Perfil()
+        {
+            return View("~/Views/Perfil/Index.cshtml");
+        }
     }
 }
