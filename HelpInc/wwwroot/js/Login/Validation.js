@@ -30,7 +30,8 @@
                         prompt: 'A senha deve conter no maxímo 40 caracteres'
                     },
                     {
-                        type: 'regExp[/^(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])(?!.*\s).*$/]',
+                        type: 'regExp[/^(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#]).*$/]',
+                        //regExp[/^(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])(?!.*\s).*$/]
                         prompt: 'A senha deve conter 1 caractere maíusculo, minusculo, número e simbolo "$*&@#"'
                     }
                 ]
