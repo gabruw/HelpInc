@@ -21,6 +21,20 @@
     @* Framework's JS *@
     <script type="text/javascript" src="~/lib/jquery/dist/jquery.js"></script>
     <script type="text/javascript" src="~/lib/semantic/semantic.js"></script>
+
+
+
+
+    @switch (ViewData["Title"])
+    {
+        case "Perfil":
+            @* Link's CSS Especifico *@
+            <link rel="stylesheet" type="text/css" href="~/css/Perfil/Index.css">
+
+            @* Link's JS Especifico *@
+            <script defer type="text/javascript" src="~/js/Perfil/Index.js"></script>
+            break;
+    }
 </head>
 <body>
     @* Menu Superior *@

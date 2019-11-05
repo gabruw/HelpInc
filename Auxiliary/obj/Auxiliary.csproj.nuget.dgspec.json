@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\HelpInc\\Auxiliary\\Auxiliary.csproj": {}
+    "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Auxiliary\\Auxiliary.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\HelpInc\\Auxiliary\\Auxiliary.csproj": {
+    "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Auxiliary\\Auxiliary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\HelpInc\\Auxiliary\\Auxiliary.csproj",
+        "projectUniqueName": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Auxiliary\\Auxiliary.csproj",
         "projectName": "Auxiliary",
-        "projectPath": "C:\\Projects\\HelpInc\\Auxiliary\\Auxiliary.csproj",
-        "packagesPath": "C:\\Users\\gabrielrigolon\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\HelpInc\\Auxiliary\\obj\\",
+        "projectPath": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Auxiliary\\Auxiliary.csproj",
+        "packagesPath": "C:\\Users\\snyp_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Auxiliary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\gabrielrigolon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\snyp_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
