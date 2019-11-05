@@ -41,44 +41,40 @@ namespace HelpInc.Controllers
             Login serializeLogin = new Login();
             serializeLogin.Email = dataRegistro["email"];
             serializeLogin.Senha = dataRegistro["password"];
+            serializeLogin = _loginRepository.IncluidAndReturnId(serializeLogin);
 
             Endereco serializeEndereco = new Endereco();
-            //serializeEndereco.Cep = dataRegistro["cep"];
+            serializeEndereco.Cep = Int32.Parse(dataRegistro["cep"]);
             serializeEndereco.Rua = dataRegistro["rua"];
-            //serializeEndereco.Numero = dataRegistro["numero"];
+            serializeEndereco.Numero = Int32.Parse(dataRegistro["numero"]);
             serializeEndereco.Referencia = dataRegistro["referencia"];
             serializeEndereco.Estado = dataRegistro["estado"];
             serializeEndereco.Cidade = dataRegistro["cidade"];
             serializeEndereco.Bairro = dataRegistro["bairro"];
-            //serializeEndereco.Complemento = dataRegistro["complemento"];
+            serializeEndereco.Complemento =  Int32.Parse(dataRegistro["complemento"]);
             serializeEndereco.Referencia = dataRegistro["referencia"];
 
             Consumidor serializeConsumidor = new Consumidor();
-            serializeConsumidor.Nome = dataRegistro["nome"];
-            //serializeConsumidor.Cpf = dataRegistro["cpf"];
-            //serializeConsumidor.Telefone = dataRegistro["telefone"];
-            serializeConsumidor.Sobrenome = dataRegistro["sobrenome"];
-            //serializeConsumidor.Rg = dataRegistro["rg"];
-            //serializeConsumidor.Celular = dataRegistro["celular"];
-            serializeConsumidor.Nome = dataRegistro["nome"];
+            serializeConsumidor.Nome = dataRegistro["nome_consumidor"];
+            serializeConsumidor.Cpf = Int32.Parse(dataRegistro["cpf_consumidor"]);
+            serializeConsumidor.Telefone = Int32.Parse(dataRegistro["telefone_consumidor"]);
+            serializeConsumidor.Sobrenome = dataRegistro["sobrenome_consumidor"];
+            serializeConsumidor.Rg = Int32.Parse(dataRegistro["rg_consumidor"]);
+            serializeConsumidor.Celular = Int32.Parse(dataRegistro["celular_consumidor"]);
 
             Prestador serializePrestador = new Prestador();
-            serializePrestador.Nome = dataRegistro["nome"];
-            //serializePrestador.Cpf = dataRegistro["cpf"];
-            //serializePrestador.Telefone = dataRegistro["telefone"];
-            serializePrestador.Sobrenome = dataRegistro["sobrenome"];
-            //serializePrestador.Rg = dataRegistro["rg"];
-            //serializePrestador.Celular = dataRegistro["celular"];
-            serializePrestador.Nome = dataRegistro["nome"];
+            serializePrestador.Nome = dataRegistro["nome_prestador"];
+            serializeConsumidor.Cpf = Int32.Parse(dataRegistro["cpf_prestador"]);
+            serializeConsumidor.Telefone = Int32.Parse(dataRegistro["telefone_prestador"]);
+            serializePrestador.Sobrenome = dataRegistro["sobrenome_prestador"];
+            serializeConsumidor.Rg = Int32.Parse(dataRegistro["rg_prestador"]);
+            serializeConsumidor.Celular = Int32.Parse(dataRegistro["celular_prestador"]);
 
             Empresa serializeEmpresa = new Empresa();
             serializeEmpresa.NomeFantasia = dataRegistro["nome_fantasia"];
             serializeEmpresa.RazaoSocial = dataRegistro["razao_social"];
-            //serializeEmpresa.Cnpj = dataRegistro["cnpj"];
-            //serializeEmpresa.Telefone = dataRegistro["telefone"];
-
-
-
+            serializeEmpresa.Cnpj = Int32.Parse(dataRegistro["cnpj_empresa"]);
+            serializeEmpresa.Telefone = Int32.Parse(dataRegistro["telefone_empresa"]);
 
             return View("~/Views/Login/Index.cshtml");
         }

@@ -20,6 +20,14 @@ namespace Repository.Repository
             HelpIncContext.SaveChanges();
         }
 
+        public TEntity IncluidAndReturnId(TEntity entity)
+        {
+            HelpIncContext.Set<TEntity>().Add(entity);
+            HelpIncContext.SaveChanges();
+
+            return entity;
+        }
+
         public void Update(TEntity entity)
         {
             HelpIncContext.Set<TEntity>().Update(entity);
