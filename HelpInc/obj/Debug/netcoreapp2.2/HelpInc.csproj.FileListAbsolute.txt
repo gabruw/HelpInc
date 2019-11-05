@@ -185,3 +185,4 @@ C:\Projects\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtm
 C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\Razor\Views\Perfil\Index.cshtml.g.cs
 C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\Razor\Views\Registro\Index.cshtml.g.cs
 C:\Users\snyp_\Documents\GitHub\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Account.cshtml.g.cs
+C:\Projects\HelpInc\HelpInc\obj\Debug\netcoreapp2.2\Razor\Views\Perfil\Index.cshtml.g.cs

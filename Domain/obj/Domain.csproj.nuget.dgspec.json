@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Domain\\Domain.csproj": {}
+    "C:\\Projects\\HelpInc\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Domain\\Domain.csproj": {
+    "C:\\Projects\\HelpInc\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Projects\\HelpInc\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\snyp_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\snyp_\\Documents\\GitHub\\HelpInc\\Domain\\obj\\",
+        "projectPath": "C:\\Projects\\HelpInc\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\gabrielrigolon\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\HelpInc\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\snyp_\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\gabrielrigolon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"

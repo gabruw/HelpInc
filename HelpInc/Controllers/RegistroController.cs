@@ -76,7 +76,12 @@ namespace HelpInc.Controllers
             serializeEmpresa.Cnpj = Int32.Parse(dataRegistro["cnpj_empresa"]);
             serializeEmpresa.Telefone = Int32.Parse(dataRegistro["telefone_empresa"]);
 
+
+
             return View("~/Views/Login/Index.cshtml");
+
+
+
         }
 
         // POST: Registro/Create
