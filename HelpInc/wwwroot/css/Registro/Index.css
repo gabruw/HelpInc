@@ -12,6 +12,9 @@
     padding: 13px !important;
     margin: -3px !important;
 }
+ui.grid > .column:not(.row), .ui.grid > .row > .column {
+    padding-left: 0rem !important;
+}
 
 .ui.dropdown .menu > .item {
     color: black !important;
@@ -46,6 +49,10 @@
         transition: 1s !important;
     }
 
+#id_gender {
+    height: 42px !important;
+}
+
 #Button-Register {
     margin-left: 120px !important;
 }
@@ -58,6 +65,19 @@
     background-color: #ffffff;
     width: 750px !important;
     margin-top: 35px !important;
+}
+
+#Box-Right-Column-CPF {
+    width: 170px !important;
+}
+
+#Box-Right-Column-Mobile {
+    width:218px !important;
+}
+
+#skills {
+    width: 622px ;
+    border-radius: 0px !important;
 }
 
 #Box-Left-Column {

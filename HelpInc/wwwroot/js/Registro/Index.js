@@ -13,10 +13,16 @@
     };
 });
 
-$('#Estado')
+$('#estado')
     .dropdown();
 
-$('#Cidade')
+$('#cidade')
     .dropdown();
 
-$('#tela-registro .menu .item').tab();
+$('#tela-registro .menu .item')
+    .tab();
+
+$('#skills')
+    .dropdown({
+    allowAdditions: true
+  });

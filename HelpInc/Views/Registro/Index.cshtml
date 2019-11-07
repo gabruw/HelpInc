@@ -15,7 +15,6 @@
                 </div>
 
                 <form class="ui segment form">
-
                     <div class="ui grid">
                         <div class="row ">
                             <div class="four wide column ">
@@ -66,7 +65,7 @@
                                     </div>
                                 </div>
 
-                                <div class="  eight wide column">
+                                <div class="eight wide column">
                                     <div class="field">
                                         <div class="ui labeled input">
                                             <div class="ui label">
@@ -77,8 +76,30 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class=" row">
+                            <div id="id_gender" class="centered row">
+                                <div class="inline fields">
+                                    <label>Genero:</label>
+                                    <div class="field">
+                                        <div class="ui radio checkbox">
+                                            <input type="radio" name="gender">
+                                            <label>Masculino</label>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="ui radio checkbox">
+                                            <input type="radio" name="gender">
+                                            <label>Feminino</label>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="ui radio checkbox">
+                                            <input type="radio" name="gender">
+                                            <label>Não informar</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
                                 <div id="Box-Left-Column" class="eight wide column">
                                     <div class="field">
                                         <div class="ui labeled input">
@@ -131,72 +152,124 @@
                     <div class="ui tab" data-tab="second">
                         <div class="ui grid">
                             <div class="row">
-                                <div id="Box-Left-Column" class="eight wide column">
+                                <div class="five wide column">
                                     <div class="field">
-                                        <div class="ui labeled input">
+                                        <div class="ui fluid labeled input">
                                             <div class="ui label">
                                                 <i id="Icon-Margin" class="fas fa-address-card"></i>
                                             </div>
-                                            <input type="text" name="nome_prestador" placeholder="Nome">
+                                            <input type="text" name="nome_consumidor" placeholder="Nome">
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="  eight wide column">
+                                <div class="five wide column">
                                     <div class="field">
-                                        <div class="ui labeled input">
+                                        <div class="ui fluid labeled input">
                                             <div class="ui label">
                                                 <i id="Icon-Margin" class="far fa-address-card"></i>
                                             </div>
-                                            <input type="text" name="sobrenome_prestador" placeholder="Sobrenome">
+                                            <input type="text" name="sobrenome_consumidor" placeholder="Sobrenome">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="five wide collumn">
+                                    <div class="field">
+                                        <div id="Box-Right-Column-CPF" class="ui labeled input">
+                                            <div class="ui label">
+                                                <i id="Icon-Margin" class="fas fa-id-card"></i>
+                                            </div>
+                                            <input type="text" name="cpf_consumidor" placeholder="CPF">
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class=" row">
-                                <div id="Box-Left-Column" class="eight wide column">
+                            <div id="id_gender" class="centered row">
+                                <div class="inline fields">
+                                    <label>Genero:</label>
+                                    <div class="field">
+                                        <div class="ui radio checkbox">
+                                            <input type="radio" name="gender">
+                                            <label>Masculino</label>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="ui radio checkbox">
+                                            <input type="radio" name="gender">
+                                            <label>Feminino</label>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="ui radio checkbox">
+                                            <input type="radio" name="gender">
+                                            <label>Não informar</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="sixteen wide column">
                                     <div class="field">
                                         <div class="ui labeled input">
                                             <div class="ui label">
                                                 <i id="Icon-Margin" class="fas fa-id-card"></i>
                                             </div>
-                                            <input type="text" name="cpf_prestador" placeholder="CPF">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="eight wide column">
-                                    <div class="field">
-                                        <div class="ui labeled input">
-                                            <div class="ui label">
-                                                <i id="Icon-Margin" class="far fa-id-card"></i>
+                                            <div class="ui multiple selection dropdown" id="skills">
+                                                <div class="default text">Habilidades</div>
+                                                <div class="menu">
+                                                    <div class="item" data-value="angular">Angular</div>
+                                                    <div class="item" data-value="css">CSS</div>
+                                                    <div class="item" data-value="design">Graphic Design</div>
+                                                    <div class="item" data-value="ember">Ember</div>
+                                                    <div class="item" data-value="html">HTML</div>
+                                                    <div class="item" data-value="ia">Information Architecture</div>
+                                                    <div class="item" data-value="javascript">Javascript</div>
+                                                    <div class="item" data-value="mech">Mechanical Engineering</div>
+                                                    <div class="item" data-value="meteor">Meteor</div>
+                                                    <div class="item" data-value="node">NodeJS</div>
+                                                    <div class="item" data-value="plumbing">Plumbing</div>
+                                                    <div class="item" data-value="python">Python</div>
+                                                    <div class="item" data-value="rails">Rails</div>
+                                                    <div class="item" data-value="react">React</div>
+                                                    <div class="item" data-value="repair">Kitchen Repair</div>
+                                                    <div class="item" data-value="ruby">Ruby</div>
+                                                    <div class="item" data-value="ui">UI Design</div>
+                                                    <div class="item" data-value="ux">User Experience</div>
+                                                </div>
                                             </div>
-                                            <input type="text" name="rg_prestador" placeholder="RG">
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                             <div class="row">
-                                <div id="Box-Left-Column" class=" eight wide column">
+                                <div class="five wide column">
                                     <div class="field">
-                                        <div class="ui labeled input">
+                                        <div class="ui fluid labeled input">
                                             <div class="ui label">
-                                                <i id="Icon-Margin" class="fas fa-phone"></i>
+                                                <i id="Icon-Margin" class="far fa-id-card"></i>
                                             </div>
-                                            <input type="text" name="telefone_prestador" placeholder="Telefone">
+                                            <input type="text" name="rg_consumidor" placeholder="RG">
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="eight wide column">
+                                <div class=" five wide column">
                                     <div class="field">
-                                        <div class="ui labeled input">
+                                        <div class="ui fluid labeled input">
+                                            <div class="ui label">
+                                                <i id="Icon-Margin" class="fas fa-phone"></i>
+                                            </div>
+                                            <input type="text" name="telefone_consumidor" placeholder="Telefone">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="Box-Right-Column-Mobile" class="five wide column">
+                                    <div class="field">
+                                        <div class="ui fluid labeled input">
                                             <div class="ui label">
                                                 <i id="Icon-Margin" class="fas fa-mobile"></i>
                                             </div>
-                                            <input type="text" name="celular_prestador" placeholder="Celular">
+                                            <input type="text" name="celular_consumidor" placeholder="Celular">
                                         </div>
                                     </div>
                                 </div>
@@ -275,7 +348,7 @@
                                         <div class="ui label">
                                             <i id="Icon-Margin" class="far fa-map"></i>
                                         </div>
-                                        <div class="ui fluid search selection dropdown" id="Estado">
+                                        <div class="ui fluid search selection dropdown" id="estado">
                                             <div class="default text">Estado</div>
                                             <div class="menu">
                                                 <div class="item" data-value="AC">Acre</div>
@@ -317,7 +390,7 @@
                                         <div class="ui label">
                                             <i id="Icon-Margin" class="fas fa-map"></i>
                                         </div>
-                                        <div class="ui fluid search selection dropdown" id="Cidade">
+                                        <div class="ui fluid search selection dropdown" id="cidade">
                                             <div class="default text">Cidade</div>
                                             <div class="menu">
                                                 <div class="item" data-value="af">Afghanistan</div>
@@ -330,13 +403,24 @@
                         </div>
 
                         <div class="row">
-                            <div class="ten wide column">
+                            <div class="six wide column">
                                 <div class="field">
                                     <div class="ui labeled input">
                                         <div class="ui label">
                                             <i id="Icon-Margin" class="fas fa-map-marker"></i>
                                         </div>
                                         <input type="text" name="rua" placeholder="Rua">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="four wide column">
+                                <div class="field">
+                                    <div class="ui fluid labeled input">
+                                        <div class="ui label">
+                                            <i id="Icon-Margin" class="fas fa-map-marked-alt"></i>
+                                        </div>
+                                        <input type="text" name="numero" placeholder="Numero">
                                     </div>
                                 </div>
                             </div>
@@ -358,27 +442,14 @@
                                 <div class="field">
                                     <div class="ui labeled input">
                                         <div class="ui label">
-                                            <i id="Icon-Margin" class="fas fa-map-marked-alt"></i>
-                                        </div>
-                                        <input type="text" name="numero" placeholder="Numero">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="eight wide column">
-                                <div class="field">
-                                    <div class="ui labeled input">
-                                        <div class="ui label">
                                             <i id="Icon-Margin" class="fas fa-map-pin"></i>
                                         </div>
                                         <input type="text" name="complemento" placeholder="Complemento">
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="sixteen wide column">
+                            <div class="eight wide column">
                                 <div class="field">
                                     <div class="ui labeled input">
                                         <div class="ui label">
@@ -388,7 +459,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>                   
+                        </div>
+
                         <div class="six wide column">
                             <button type="submit" id="Button-Return" class="ui fluid teal submit button ">VOLTAR</button>
                         </div>
