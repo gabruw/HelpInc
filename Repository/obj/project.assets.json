@@ -4104,23 +4104,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jovany\\.nuget\\packages\\": {},
+    "C:\\Users\\gabrielrigolon\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\HelpInc\\Repository\\Repository.csproj",
+      "projectUniqueName": "C:\\Projects\\HelpInc\\Repository\\Repository.csproj",
       "projectName": "Repository",
-      "projectPath": "E:\\HelpInc\\Repository\\Repository.csproj",
-      "packagesPath": "C:\\Users\\Jovany\\.nuget\\packages\\",
-      "outputPath": "E:\\HelpInc\\Repository\\obj\\",
+      "projectPath": "C:\\Projects\\HelpInc\\Repository\\Repository.csproj",
+      "packagesPath": "C:\\Users\\gabrielrigolon\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\HelpInc\\Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Jovany\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gabrielrigolon\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4133,8 +4133,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "E:\\HelpInc\\Domain\\Domain.csproj": {
-              "projectPath": "E:\\HelpInc\\Domain\\Domain.csproj"
+            "C:\\Projects\\HelpInc\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Projects\\HelpInc\\Domain\\Domain.csproj"
             }
           }
         }

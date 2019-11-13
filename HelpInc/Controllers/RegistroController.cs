@@ -41,7 +41,7 @@ namespace HelpInc.Controllers
             Login serializeLogin = new Login();
             serializeLogin.Email = dataRegistro["email"];
             serializeLogin.Senha = dataRegistro["password"];
-            serializeLogin = _loginRepository.IncluidAndReturnId(serializeLogin);
+           
 
             Endereco serializeEndereco = new Endereco();
             serializeEndereco.Cep = Int32.Parse(dataRegistro["cep"]);
@@ -54,27 +54,59 @@ namespace HelpInc.Controllers
             serializeEndereco.Complemento =  Int32.Parse(dataRegistro["complemento"]);
             serializeEndereco.Referencia = dataRegistro["referencia"];
 
-            Consumidor serializeConsumidor = new Consumidor();
-            serializeConsumidor.Nome = dataRegistro["nome_consumidor"];
-            serializeConsumidor.Cpf = Int32.Parse(dataRegistro["cpf_consumidor"]);
-            serializeConsumidor.Telefone = Int32.Parse(dataRegistro["telefone_consumidor"]);
-            serializeConsumidor.Sobrenome = dataRegistro["sobrenome_consumidor"];
-            serializeConsumidor.Rg = Int32.Parse(dataRegistro["rg_consumidor"]);
-            serializeConsumidor.Celular = Int32.Parse(dataRegistro["celular_consumidor"]);
+            serializeEndereco = _enderecoRepository.IncluidAndReturnId(serializeEndereco);
 
-            Prestador serializePrestador = new Prestador();
-            serializePrestador.Nome = dataRegistro["nome_prestador"];
-            serializeConsumidor.Cpf = Int32.Parse(dataRegistro["cpf_prestador"]);
-            serializeConsumidor.Telefone = Int32.Parse(dataRegistro["telefone_prestador"]);
-            serializePrestador.Sobrenome = dataRegistro["sobrenome_prestador"];
-            serializeConsumidor.Rg = Int32.Parse(dataRegistro["rg_prestador"]);
-            serializeConsumidor.Celular = Int32.Parse(dataRegistro["celular_prestador"]);
+            if (dataRegistro["cpf_consumidor"].Count > 0)
+            {
+                serializeLogin.Tipo = 'C';
+                serializeLogin = _loginRepository.IncluidAndReturnId(serializeLogin);
 
-            Empresa serializeEmpresa = new Empresa();
-            serializeEmpresa.NomeFantasia = dataRegistro["nome_fantasia"];
-            serializeEmpresa.RazaoSocial = dataRegistro["razao_social"];
-            serializeEmpresa.Cnpj = Int32.Parse(dataRegistro["cnpj_empresa"]);
-            serializeEmpresa.Telefone = Int32.Parse(dataRegistro["telefone_empresa"]);
+                Consumidor serializeConsumidor = new Consumidor();
+                serializeConsumidor.Nome = dataRegistro["nome_consumidor"];
+                serializeConsumidor.Cpf = Int32.Parse(dataRegistro["cpf_consumidor"]);
+                serializeConsumidor.Telefone = Int32.Parse(dataRegistro["telefone_consumidor"]);
+                serializeConsumidor.Sobrenome = dataRegistro["sobrenome_consumidor"];
+                serializeConsumidor.Rg = Int32.Parse(dataRegistro["rg_consumidor"]);
+                serializeConsumidor.Celular = Int32.Parse(dataRegistro["celular_consumidor"]);
+                serializeConsumidor.IdEndereco = serializeEndereco.Id;
+                serializeConsumidor.IdLogin = serializeLogin.Id;
+
+                _consumidorRepository.Incluid(serializeConsumidor);
+            }
+
+            else if (dataRegistro["cpf_prestador"].Count > 0)
+            {
+                serializeLogin.Tipo = 'P';
+                serializeLogin = _loginRepository.IncluidAndReturnId(serializeLogin);
+
+                Prestador serializePrestador = new Prestador();
+                serializePrestador.Nome = dataRegistro["nome_prestador"];
+                serializePrestador.Cpf = Int32.Parse(dataRegistro["cpf_prestador"]);
+                serializePrestador.Telefone = Int32.Parse(dataRegistro["telefone_prestador"]);
+                serializePrestador.Sobrenome = dataRegistro["sobrenome_prestador"];
+                serializePrestador.Rg = Int32.Parse(dataRegistro["rg_prestador"]);
+                serializePrestador.Celular = Int32.Parse(dataRegistro["celular_prestador"]);
+                serializePrestador.IdEndereco = serializeEndereco.Id;
+                serializePrestador.IdLogin = serializeLogin.Id;
+
+                _prestadorRepository.Incluid(serializePrestador);
+            }
+
+            else if (dataRegistro["cnpj_empresa"].Count > 0)
+            {
+                serializeLogin.Tipo = 'E';
+                serializeLogin = _loginRepository.IncluidAndReturnId(serializeLogin);
+
+                Empresa serializeEmpresa = new Empresa();
+                serializeEmpresa.NomeFantasia = dataRegistro["nome_fantasia"];
+                serializeEmpresa.RazaoSocial = dataRegistro["razao_social"];
+                serializeEmpresa.Cnpj = Int32.Parse(dataRegistro["cnpj_empresa"]);
+                serializeEmpresa.Telefone = Int32.Parse(dataRegistro["telefone_empresa"]);
+                serializeEmpresa.IdEndereco = serializeEndereco.Id;
+                serializeEmpresa.IdLogin = serializeLogin.Id;
+
+                _empresaRepository.Incluid(serializeEmpresa);
+            }
 
 
 
